@@ -1,65 +1,94 @@
 * {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 5px auto;
-    padding: 5px auto;
-    background-color:slategray;
+    margin: 0 auto;
+    padding: 0 auto;
     color: white;
-    font-size: 16px;
+}
+
+body {
+    background-color: slategray;
 }
 
 .nav-bar nav{
-    width: 100%;
-    height: 100px;
     display:flex;
-    justify-content: center;
+    width: 100%;
+    height: 90px;
+    padding: 0.20rem;
     align-content: center;
-    //position: fixed;
-    z-index: 1;
 }
 
 .nav-bar img {
-    height: 100px;
-    width: 150px;
-    margin: 0 auto;
-    padding: 0 auto;
-    border: 4px blue solid;
-    border-radius: 5px;
-    float: left;
+    height: auto;
+    width: auto;
+    border: 5px blue solid;
+    border-radius: 10px;
 }
 
 .nav-bar ul{
     display: inline-flex;
-    position: relative;
+    align-items: center;
+
 }
 
 .nav-bar li {
-    position: relative;
     display: flex;
-    justify-content: center;
+    height: 2rem;
+    margin: 0.5rem;
+    padding: 0.25rem;
     align-items: center;
-    margin: 10px;
-    padding: 5px;
-    font-size: 5rem;
-    border: 2px blue solid;
+    font-size: 1.35rem;
+    border: 3px blue solid;
     border-radius: 10px
 }
 
-.banner .main-title {
+.main-title {
     display: block;
+    width: auto;
+    padding: 0.25rem;
+    font-size: 3rem;
+    border: 2px white solid;
+    border-radius: 15px;
 }
 
 .banner {
-    width: 100%;
-    display: inline-block;
+    display: flex;
+    width: auto;
+    height: 35rem;
+    align-items: center;
+    background-image: url(./banner-pic.webp);
+    background-repeat: round;
 }
 
-.banner img{
-    width: 100%;
-    margin: 15px;
-    z-index: 0;
+.con-title {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2rem;
 }
 
+.container-1 {
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    align-items: center;
+}
 
-.container .left{
-    display: block;
+.left-side{
+    width: 50%;
+    border: 1px white solid;
+}
+
+.left-side th {
+    font-size: 1.5rem;
+    border: 1px solid white;
+
+}
+
+.right-side {
+    width: 50%;
+    border: 1px white solid;
+}
+
+.right-side th {
+    font-size: 1.5rem;
+    border: 1px white solid;
 }
