@@ -7,7 +7,6 @@
      </head>
 
   <body>
-
         <!-- Navigation Section -->
     <div class="nav-bar" id="home">
        <nav>
@@ -77,15 +76,15 @@
         <table class="left-side2">
             <thead>
                 <tr>
-                    <th>HTML</th>
+                    <th>HTML:</th>
                     <th>Structual Code & Layout</th>
                 </tr>
                 <tr>
-                    <th>CSS</th>
+                    <th>CSS:</th>
                     <th>Adding color & styles</th>
                 </tr>
                 <tr>
-                    <th>JavaScript</th>
+                    <th>JavaScript:</th>
                     <th>Implementing Js for functionality</th>
                 </tr>
             </thead>
@@ -93,43 +92,120 @@
         <table class="right-side2">
             <thead>
                 <tr>
-                    <th>Git & GitHub</th>
+                    <th>Git & GitHub:</th>
                     <th>Version control & collaboration</th>
                 </tr>
                 <tr>
-                    <th>Minor Java</th>
+                    <th>Minor Java:</th>
                     <th>Application Development</th>
                 </tr>
                 <tr>
-                    <th>Basic SQL Statements</th>
+                    <th>Basic SQL Statements:</th>
                     <th>Data Manipulation & Analysis</th>
                 </tr>
             </thead>
         </table>
     </div>
 
-        <!-- Forms & Buttons -->
-    <h2 class="form-title">Try For Yourself</h2>
-    <div class="forms">    
+        <!-- Form Section -->
+    <h2 class="math-title">Try For Yourself</h2>
+    <div class="form1">    
         <form class="math-form">
             <label for="num1">Please enter your 1st number:</label>
-            <input type="number" class="num1" name="num1">
+            <input type="number" class="num1" name="num1" required min="1">
                 <br>
             <label for="num2">Please enter your 2nd number:</label>
-            <input type="number" class="num2" name="num2">
+            <input type="number" class="num2" name="num2" required min="1">
                 <br>
             <label for="num3">Please enter your 3rd number:</label>
-            <input type="number" class="num3" name="num3">
+            <input type="number" class="num3" name="num3" required min="1">
                 <br>
-            <label for="submit1">Click button for the mean and median</label>
+            <label for="submit1">Click "submit" for the mean and median</label>
             <button type="submit" class="submit1" name="submit1">Submit</button>
                 <br>
         </form>
-        <form class="math-answers">
+        <form class="math-answers" method="post">
             <label for="answer1">The mean of your numbers is: <span class="mean"></span></label>
                 <br>
             <label for="answer2">The median of your numbers is: <span class="median"></span></label>
                 <br>
+        </form>
+    </div>
+
+    <h2 class="word-title">Your own Message</h2>
+    <div class="form2">
+        <form class="word-form">
+            <label for="word1">Please enter your first name:</label>
+            <input type="text" class="word1" name="word1" required>
+                <br>
+            <label for="date1">Please enter today's date:</label>
+            <input type="date" class="date1" name="date1" required>
+                <br>
+            <label for="submit2">Click "submit" for your own message</label>
+            <button type="submit" class="submit2" name="submit2">Submit</button>
+                <br>
+        </form>
+        <form class="word-message">
+            <label for="message1">Your personalized message:</label>
+            <label for="message2"><span class="message2"></span></label>
+        </form>
+    </div>
+
+    <h2 class="random-title">Random Message Generator</h2>
+    <div class="form3">
+        <form class="random-form">
+            <label for="option1">Please pick your 1st word:</label>
+            <input list="option" class="option1" name="option1">
+            <datalist class="option">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </datalist>
+                <br>
+            <label for="option2">Please pick your 2nd word:</label>
+            <input list="option1" class="option2" name="option2">
+            <datalist class="option1">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </datalist>
+                <br>
+            <label for="option3">Please pick your 3rd word:</label>
+            <input list="option2" class="option3" name="option3">
+            <datalist class="option2">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </datalist>
+                <br>
+            <label for="submit3">Click "submit" for a randomly generated message</label>
+            <button type="submit" class="submit3" name="submit3">Submit</button>
+                <br>
+        </form>
+        <form class="random-message">
+            <label for="random1">Your random message is:</label>
+            <label for="random2"><span class="random"></span></label>
+        </form>
+    </div>
+
+        <!-- Button Section -->
+    <h2 class="button-title">Please also try these buttons!</h2>
+    <div class="buttons">
+        <form class="button-form">
+            <div class="button1">
+                <label for="button1">Click me!</label>
+                <button type="button" class="button1" name="button1">See what happens!</button>
+            </div>
+                <br>
+            <div class="button2">
+                <label for="button2">Click me!</label>
+                <button type="button" class="button2" name="button2">Check this out!</button>
+            </div>
+                <br>
+            <div class="button3">
+                <label for="button3">Click me!</label>
+                <button type="button" class="button3" name="button3">Wonder what this does?</button>
+            </div>
         </form>
     </div>
 

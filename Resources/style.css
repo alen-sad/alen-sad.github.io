@@ -23,7 +23,7 @@ body {
 .nav-bar img {
     height: auto;
     width: auto;
-    border: 2px blue solid;
+    border: 3px darkblue solid;
     border-radius: 10px;
 }
 
@@ -38,12 +38,12 @@ body {
     display: flex;
     height: 2rem;
     margin: 0.5rem;
-    padding: 0.25rem;
+    padding: 0.75rem;
     align-items: center;
-    font-size: 1.35rem;
-    border: 3px blue solid;
-    border-radius: 0.75rem;
-    background-color: blue;
+    font-size: 1.45rem;
+    border: 3px darkblue solid;
+    border-radius: 1rem;
+    background-color: darkblue;
 }
 
 /* Banner & Main Title */
@@ -135,8 +135,8 @@ body {
     border: 1px white solid;
 }
 
-/* Form Title */
-.form-title {
+/* Math Form Title */
+.math-title {
     text-align: center;
     padding-top: 1rem;
     font-size: 2rem;
@@ -144,39 +144,208 @@ body {
 }
 
 /* Math Form Section */
-.forms {
+.form1 {
     display: flex;
     width: 100%;
-    margin: 0.25rem;
-    padding: 0.25rem;
+    margin: 0.35rem;
+    padding: 0.35rem;
     align-items: center;
     text-align: center;
+    border-bottom: 3px white solid;
 }
 
-.forms input {
+.form1 input {
     color: black;
     padding: 0.45rem;
     margin: 0.5rem;
     font-size: 1rem;
-    border: 1px blue solid;
+    border: 1px darkblue solid;
 }
 
-.forms label {
+.form1 label {
     font-size: 1.75rem;
     margin: 0.25rem;
     padding: 0.5rem;
     text-decoration: underline;
 }
 
-.forms button {
+.form1 button {
     font-size: 1.25rem;
-    color: blue;
+    color: darkblue;
     margin: 0.25rem;
-    padding: 0.15rem;
+    padding: 0.45rem;
+    border-radius: 15px;
 }
 
-.math-answers label{
+.math-answers label {
+    width: 50%;
     text-decoration: none;
+}
+
+/* Word Form Title */
+.word-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Word Form Section */
+.form2 {
+    display: flex;
+    width: 100%;
+    margin: 0.35rem;
+    padding: 0.35rem;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px white solid;
+}
+
+.form2 input {
+    color: black;
+    padding: 0.45rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: 1px darkblue solid;
+}
+
+.form2 label {
+    font-size: 1.75rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+
+.form2 button {
+    font-size: 1.25rem;
+    color: darkblue;
+    margin: 0.25rem;
+    padding: 0.45rem;
+    border-radius: 15px;
+}
+
+.word-message label {
+    width: 50%;
+    text-decoration: none;
+}
+
+/* Random Generator Title */
+.random-title{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Random Generator Section */
+.form3{
+    display: flex;
+    width: 100%;
+    margin: 0.35rem;
+    padding: 0.35rem;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px white solid;
+}
+
+.form3 input {
+    color: black;
+    padding: 0.45rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: 1px darkblue solid;
+}
+
+.form3 label {
+    font-size: 1.75rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+
+.form3 button {
+    font-size: 1.25rem;
+    color: darkblue;
+    margin: 0.25rem;
+    padding: 0.45rem;
+    border-radius: 15px;
+}
+
+.random-message label{
+    width: 50%;
+    text-decoration: none;
+}
+
+/* Button Title */
+.button-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Button Section */
+.buttons {
+    display: flex;
+    width: 100%;
+    margin: 0.35rem;
+    padding: 0.35rem;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 3px white solid;
+}
+
+.buttons form {
+    display: flex;
+}
+
+.button1 {
+    display: block;
+    margin: 1.5rem;
+}
+
+.button1 label {
+    font-size: 1.5rem;
+}
+
+.button1 button {
+    font-size: 1.75rem;
+    color: darkblue;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+
+.button2 {
+    display: block;
+    margin: 1.5rem;
+}
+
+.button2 label {
+    font-size: 1.5rem;
+}
+
+.button2 button {
+    font-size: 1.75rem;
+    color: darkblue;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+
+.button3 {
+    display: block;
+    margin: 1.5rem;
+}
+
+.button3 label {
+    font-size: 1.5rem;
+}
+
+.button3 button {
+    font-size: 1.75rem;
+    color: darkblue;
+    padding: 1.5rem;
+    border-radius: 50px;
 }
 
 /* Footer */
@@ -184,9 +353,8 @@ body {
     display: flex;
     width: 100%;
     height: 8rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    border-top: 3px white solid;
 }
 
 .footer ul {
@@ -199,10 +367,10 @@ body {
     display: flex;
     height: 2rem;
     font-size: 1.4rem;
-    margin: 0.5rem;
-    padding: 0.3rem;
+    margin: 0.75rem;
+    padding: 0.75rem;
     align-items: center;
-    border: 3px blue solid;
-    border-radius: 0.75rem;
-    background-color: blue;
+    border: 3px darkblue solid;
+    border-radius: 1rem;
+    background-color: darkblue;
 }
