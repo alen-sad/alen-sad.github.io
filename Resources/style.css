@@ -68,7 +68,9 @@ body {
 
 /* Title for tables */
 .con-title {
+    display: flex;
     text-align: center;
+    justify-content: center;
     padding-top: 1rem;
     font-size: 2rem;
     text-decoration: underline;
@@ -163,7 +165,7 @@ body {
 }
 
 .form1 label {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin: 0.25rem;
     padding: 0.5rem;
     text-decoration: underline;
@@ -210,7 +212,7 @@ body {
 }
 
 .form2 label {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin: 0.25rem;
     padding: 0.5rem;
     text-decoration: underline;
@@ -227,6 +229,11 @@ body {
 .word-message label {
     width: 50%;
     text-decoration: none;
+}
+
+.word-message span {
+    display: flex;
+    width: 40%;
 }
 
 /* Random Generator Title */
@@ -257,7 +264,7 @@ body {
 }
 
 .form3 label {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin: 0.25rem;
     padding: 0.5rem;
     text-decoration: underline;
@@ -274,6 +281,11 @@ body {
 .random-message label{
     width: 50%;
     text-decoration: none;
+}
+
+.random-message span {
+    display: flex;
+    width: 40%;
 }
 
 /* Button Title */
@@ -300,51 +312,68 @@ body {
     display: flex;
 }
 
+/* First Button */
 .button1 {
     display: block;
     margin: 1.5rem;
 }
 
 .button1 label {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .button1 button {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: darkblue;
     padding: 1.5rem;
     border-radius: 50px;
 }
 
+/* Second Button */
 .button2 {
     display: block;
     margin: 1.5rem;
 }
 
 .button2 label {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .button2 button {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: darkblue;
     padding: 1.5rem;
     border-radius: 50px;
 }
 
+/* Third Button */
 .button3 {
     display: block;
     margin: 1.5rem;
 }
 
 .button3 label {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .button3 button {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: darkblue;
     padding: 1.5rem;
+    border-radius: 50px;
+}
+
+/* Reset Button */
+.reset-button {
+    display: flex;
+}
+
+.reset-button button {
+    display: block;
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    color: darkblue;
     border-radius: 50px;
 }
 

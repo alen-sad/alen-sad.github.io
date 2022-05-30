@@ -1,40 +1,123 @@
-const form1 = document.getElementsByClassName("math-form");
-const form2 = document.getElementsByClassName("word-form");
-const form3 = document.getElementsByClassName("random-form");
-const form4 = document.getElementsByClassName("button-form");
+// Mean and Median Section //
+const form1 = document.getElementById("submit1");
 
-function meanAndMedian(event, num1, num2, num3) 
+function meanMedianAndTotal(event, num1, num2, num3) 
 {
     event.preventDefault();
 
-    num1 = document.getElementsByClassName("num1").value;
-    num2 = document.getElementsByClassName("num2").value;
-    num3 = document.getElementsByClassName("num3").value;
+    num1 = document.getElementById("num1").value;
+    num2 = document.getElementById("num2").value;
+    num3 = document.getElementById("num3").value;
 
         /* Calculating the mean */
     let sum = Number(num1) + Number(num2) + Number(num3);
     let avg = sum / 3;
-    document.getElementsByClassName("mean").innerHTML = avg;
+    document.getElementById("mean").innerHTML = avg;
 
         /* Calculating the median */
     let mathArr = [num1, num2, num3];
     mathArr.sort((a, b) => a - b);
     let med = mathArr[1];
-    document.getElementsByClassName("median").innerHTML = med;
-}
+    document.getElementById("median").innerHTML = med;
 
-function personalMessage(event, name, date) 
+        /* Calculating the total */
+    let totalSum = Number(num1) + Number(num2) + Number(num3);
+
+    document.getElementById("total").innerHTML = totalSum;
+}
+form1.addEventListener("click", meanMedianAndTotal);
+
+
+// Personal Message Section //
+const form2 = document.getElementById("submit2");
+
+function personalMessage(event, name1, date1) 
 {
     event.preventDefault();
 
-}
+    word1 = document.getElementById("name1").value;
+    date1 = document.getElementById("date1").value;
 
-function randomGenerator(event, word1, word2, word3) 
+    /* Formatting the Message */
+    document.getElementById("message2").innerHTML = 
+    `Thank you so much ${word1} for visiting my portfolio/resume site on ${date1}! 
+    I am always trying to add more to it and  keep updating it!`;
+}
+form2.addEventListener("click", personalMessage)
+
+
+// Random Message Generator //
+const form3 = document.getElementById("submit3");
+
+function randomMessage(event, option1, option2, option3) 
 {
     event.preventDefault();
 
+    option1 = document.getElementById("first-option").value;
+    option2 = document.getElementById("second-option").value;
+    option3 = document.getElementById("third-option").value;
+
+    /* Randomly Generate a Message */
+    let randomArr = [`Holy crap! That is one ${option1} monster! It looks so ${option2}! I've never seen something so ${option3}.`,
+                     `Oh god! What is that ${option1} looking thing over there?! It seems to be really ${option2}. Want to see how ${option3} it is?`,
+                     `No way! How did this ${option1} thing get here?! Do you think it's ${option2}? This is so ${option3}!`];
+    
+    let randomNum = Math.floor(Math.random() * 3);
+    document.getElementById("random-result").innerHTML = randomArr[randomNum];
+}
+form3.addEventListener("click", randomMessage);
+
+// Button Section //
+const firstButton = document.getElementById("button1");
+const secondButton = document.getElementById("button2");
+const thirdButton = document.getElementById("button3");
+const reset = document.getElementById("button4");
+
+function randomColor() 
+{
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+    let color = `rgb(${r}, ${g}, ${b})`;
+    return color;
 }
 
-form1.addEventListener("submit1", meanAndMedian);
-form2.addEventListener("submit2", personalMessage);
-form3.addEventListener("submit3", randomGenerator);
+function changeButtoncolor(event) 
+{
+    event.preventDefault();
+    event.target.style.backgroundColor = randomColor();
+}
+
+function changeTextColor(event) 
+{
+    event.preventDefault();
+    document.getElementById("second-button").style.color = randomColor();
+    document.getElementById("button2").style.color = randomColor();
+    event.target.style.backgroundColor = randomColor();
+}
+
+function changeBackgroundColor(event) 
+{
+    event.preventDefault();
+    document.getElementById("third-button").style.color = randomColor();
+    document.getElementById("button3").style.color = randomColor();
+    document.getElementById("button-section").style.backgroundColor = randomColor();
+    event.target.style.backgroundColor = randomColor();
+}
+
+function resetColors(event) 
+{
+    event.preventDefault();
+    event.target.stlye.backgroundColor = "";
+    document.getElementById("second-button").style.color = "";
+    document.getElementById("button2").style.color = "";
+    document.getElementById("third-button").style.color = "";
+    document.getElementById("button3").style.color = "";
+    document.getElementById("button-section").style.backgroundColor = "";
+}
+
+firstButton.addEventListener("click", changeButtoncolor);
+secondButton.addEventListener("click", changeTextColor);
+thirdButton.addEventListener("click", changeBackgroundColor);
+reset.addEventListener("click", resetColors);

@@ -3,7 +3,7 @@
      <head>
          <title>Alen's Resume Site</title>
          <link href="./Resources/style.css" rel="stylesheet" type="text/css">
-         <script src="./Resources/resume-site.js"></script>
+         
      </head>
 
   <body>
@@ -26,7 +26,7 @@
     </div>
 
         <!-- About Section -->
-    <h2 class="con-title">About Me</h2>
+    <h2 class="con-title" id="about">About Me</h2>
     <div class="container-1">
         <table class="left-side">
             <thead>
@@ -85,7 +85,7 @@
                 </tr>
                 <tr>
                     <th>JavaScript:</th>
-                    <th>Implementing Js for functionality</th>
+                    <th>Implementing JS for functionality</th>
                 </tr>
             </thead>
         </table>
@@ -110,115 +110,122 @@
         <!-- Form Section -->
     <h2 class="math-title">Try For Yourself</h2>
     <div class="form1">    
-        <form class="math-form">
+        <form id="math-form">
             <label for="num1">Please enter your 1st number:</label>
-            <input type="number" class="num1" name="num1" required min="1">
+            <input type="number" id="num1" name="num1" required min="1">
                 <br>
             <label for="num2">Please enter your 2nd number:</label>
-            <input type="number" class="num2" name="num2" required min="1">
+            <input type="number" id="num2" name="num2" required min="1">
                 <br>
             <label for="num3">Please enter your 3rd number:</label>
-            <input type="number" class="num3" name="num3" required min="1">
+            <input type="number" id="num3" name="num3" required min="1">
                 <br>
-            <label for="submit1">Click "submit" for the mean and median</label>
-            <button type="submit" class="submit1" name="submit1">Submit</button>
-                <br>
-        </form>
-        <form class="math-answers" method="post">
-            <label for="answer1">The mean of your numbers is: <span class="mean"></span></label>
-                <br>
-            <label for="answer2">The median of your numbers is: <span class="median"></span></label>
+            <label for="submit1" class="submit-button">Click for the mean, median, and total</label>
+            <button type="submit" id="submit1" name="submit1">Submit</button>
                 <br>
         </form>
+        <div class="math-answers">
+            <label for="answer1">The mean of your numbers is: <span id="mean"></span></label>
+                <br>
+            <label for="answer2">The median of your numbers is: <span id="median"></span></label>
+                <br>
+            <label for="answer3">The total of all 3 of your numbers is: <span id="total"></span></label>
+        </div>
     </div>
 
     <h2 class="word-title">Your own Message</h2>
     <div class="form2">
-        <form class="word-form">
-            <label for="word1">Please enter your first name:</label>
-            <input type="text" class="word1" name="word1" required>
+        <form id="word-form">
+            <label for="word1">Please enter your first or full name:</label>
+            <input type="text" id="name1" name="name1" maxlength="30" required>
                 <br>
             <label for="date1">Please enter today's date:</label>
-            <input type="date" class="date1" name="date1" required>
+            <input type="date" id="date1" name="date1" required>
                 <br>
-            <label for="submit2">Click "submit" for your own message</label>
-            <button type="submit" class="submit2" name="submit2">Submit</button>
+            <label for="submit2" class="submit-button">Click for a personal message from me!</label>
+            <button type="submit" id="submit2" name="submit2">Submit</button>
                 <br>
         </form>
         <form class="word-message">
             <label for="message1">Your personalized message:</label>
-            <label for="message2"><span class="message2"></span></label>
+            <span id="message2"></span>
         </form>
     </div>
 
     <h2 class="random-title">Random Message Generator</h2>
     <div class="form3">
-        <form class="random-form">
-            <label for="option1">Please pick your 1st word:</label>
-            <input list="option" class="option1" name="option1">
-            <datalist class="option">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+        <form id="random-form">
+            <label for="first-option">Please pick your 1st word:</label>
+            <input list="option1" id="first-option" name="first-option">
+            <datalist id="option1">
+                <option value="huge"></option>
+                <option value="weird"></option>
+                <option value="strange"></option>
             </datalist>
                 <br>
-            <label for="option2">Please pick your 2nd word:</label>
-            <input list="option1" class="option2" name="option2">
-            <datalist class="option1">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+            <label for="second-option">Please pick your 2nd word:</label>
+            <input list="option2" id="second-option" name="second-option">
+            <datalist id="option2">
+                <option value="awesome"></option>
+                <option value="spooky"></option>
+                <option value="cool"></option>
             </datalist>
                 <br>
-            <label for="option3">Please pick your 3rd word:</label>
-            <input list="option2" class="option3" name="option3">
-            <datalist class="option2">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+            <label for="third-option">Please pick your 3rd word:</label>
+            <input list="option3" id="third-option" name="third-option">
+            <datalist id="option3">
+                <option value="odd"></option>
+                <option value="crazy"></option>
+                <option value="bizarre"></option>
             </datalist>
                 <br>
-            <label for="submit3">Click "submit" for a randomly generated message</label>
-            <button type="submit" class="submit3" name="submit3">Submit</button>
+            <label for="submit3" class="submit-button">Click for a randomly generated message!</label>
+            <button type="submit" id="submit3" name="submit3">Submit</button>
                 <br>
         </form>
         <form class="random-message">
             <label for="random1">Your random message is:</label>
-            <label for="random2"><span class="random"></span></label>
+            <label for="random2"><span id="random-result"></span></label>
         </form>
     </div>
 
         <!-- Button Section -->
     <h2 class="button-title">Please also try these buttons!</h2>
-    <div class="buttons">
-        <form class="button-form">
+    <div class="buttons" id="button-section">
+        <form id="button-form">
             <div class="button1">
                 <label for="button1">Click me!</label>
-                <button type="button" class="button1" name="button1">See what happens!</button>
+                <button type="button" id="button1" class="button1" name="button1">See what happens!</button>
             </div>
                 <br>
             <div class="button2">
-                <label for="button2">Click me!</label>
-                <button type="button" class="button2" name="button2">Check this out!</button>
+                <label for="button2" id="second-button">Click me!</label>
+                <button type="button" id="button2" class="button2" name="button2">Check this out!</button>
             </div>
                 <br>
             <div class="button3">
-                <label for="button3">Click me!</label>
-                <button type="button" class="button3" name="button3">Wonder what this does?</button>
+                <label for="button3" id="third-button">Click me!</label>
+                <button type="button" id="button3" class="button3" name="button3">Wonder what this does?</button>
             </div>
+                <br>
+            <div class="reset-button">
+                <label for="reset-button" id="reset-button"></label>
+                <button type="button" id="button4" class="button4" name="button4">Clear</button>
+            </div>
+                <br>
         </form>
     </div>
 
         <!-- Footer Section -->
-    <div class="footer">
-        <div class="contact" id="contact">
-            <ul>
-                <li>Created and Coded by: Alen Sadikoski</li>
-                <li>Email: alensadikoski1@live.com</li>
-                <li><a href="https://www.linkedin.com/in/alen-s-a835a71a4/">LinkedIn Profile</a></li>
-                <li><a href="https://github.com/alen-sad">GitHub Profile</a></li>
-            </ul>
-        </div>
+    <div class="footer" id="contact">
+        <ul>
+            <li>Created and Coded by: Alen Sadikoski</li>
+            <li>Email: alensadikoski1@live.com</li>
+            <li><a href="https://www.linkedin.com/in/alen-s-a835a71a4/">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/alen-sad">GitHub Profile</a></li>
+        </ul>
     </div>
+
+    <script src="./Resources/resume-site.js" type="text/Javascript"></script>
   </body>
  </html>
