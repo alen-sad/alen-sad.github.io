@@ -10,7 +10,7 @@
         <!-- Navigation Section -->
     <div class="nav-bar" id="home">
        <nav>
-         <img src="./Resources/coding.gif" width="100px">
+         <img src="./Resources/coding.gif">
           <ul>
               <li id="home"><a href="#home">Home</a></li>
               <li id="about"><a href="#about">About</a></li>
@@ -92,25 +92,25 @@
         <table class="right-side2">
             <thead>
                 <tr>
-                    <th>Git & GitHub:</th>
-                    <th>Version control & collaboration</th>
+                    <th>Git/GitHub:</th>
+                    <th>Version control</th>
                 </tr>
                 <tr>
                     <th>Minor Java:</th>
                     <th>Application Development</th>
                 </tr>
                 <tr>
-                    <th>Basic SQL Statements:</th>
-                    <th>Data Manipulation & Analysis</th>
+                    <th>SQL/MSQL:</th>
+                    <th>Data Manipulation</th>
                 </tr>
             </thead>
         </table>
     </div>
 
-        <!-- Form Section -->
+        <!-- Math Form Section -->
     <h2 class="math-title">Try For Yourself</h2>
     <div class="form1">    
-        <form id="math-form">
+        <form id="math-form" class="math-form">
             <label for="num1">Please enter your 1st number:</label>
             <input type="number" id="num1" name="num1" required min="1">
                 <br>
@@ -125,18 +125,20 @@
                 <br>
         </form>
         <div class="math-answers">
-            <label for="answer1">The mean of your numbers is: <span id="mean"></span></label>
+            <label for="answer1">The mean is: <span id="mean"> </span></label>
                 <br>
-            <label for="answer2">The median of your numbers is: <span id="median"></span></label>
+            <label for="answer2">The median is: <span id="median"> </span></label>
                 <br>
-            <label for="answer3">The total of all 3 of your numbers is: <span id="total"></span></label>
+            <label for="answer3">The total is: <span id="total"> </span></label>
+                <br>
         </div>
     </div>
 
+        <!-- Personal Message Section -->
     <h2 class="word-title">Your own Message</h2>
     <div class="form2">
-        <form id="word-form">
-            <label for="word1">Please enter your first or full name:</label>
+        <form id="word-form" class="word-form">
+            <label for="word1">Please enter your  name:</label>
             <input type="text" id="name1" name="name1" maxlength="30" required>
                 <br>
             <label for="date1">Please enter today's date:</label>
@@ -148,13 +150,14 @@
         </form>
         <form class="word-message">
             <label for="message1">Your personalized message:</label>
-            <span id="message2"></span>
+            <p id="personal-message"></p>
         </form>
     </div>
 
+        <!-- Random Message Section -->
     <h2 class="random-title">Random Message Generator</h2>
     <div class="form3">
-        <form id="random-form">
+        <form id="random-form" class="random-form">
             <label for="first-option">Please pick your 1st word:</label>
             <input list="option1" id="first-option" name="first-option">
             <datalist id="option1">
@@ -185,16 +188,16 @@
         </form>
         <form class="random-message">
             <label for="random1">Your random message is:</label>
-            <label for="random2"><span id="random-result"></span></label>
+            <p id="random-result"></p>
         </form>
     </div>
 
         <!-- Button Section -->
-    <h2 class="button-title">Please also try these buttons!</h2>
+    <h2 class="button-title" id="button-title">Please also try these buttons!</h2>
     <div class="buttons" id="button-section">
-        <form id="button-form">
+        <form id="button-form" class="button-form">
             <div class="button1">
-                <label for="button1">Click me!</label>
+                <label for="button1" id="first-button">Click me!</label>
                 <button type="button" id="button1" class="button1" name="button1">See what happens!</button>
             </div>
                 <br>
@@ -210,7 +213,7 @@
                 <br>
             <div class="reset-button">
                 <label for="reset-button" id="reset-button"></label>
-                <button type="button" id="button4" class="button4" name="button4">Clear</button>
+                <button type="button" id="button4" class="button4" name="button4">Reset</button>
             </div>
                 <br>
         </form>

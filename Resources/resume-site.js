@@ -12,7 +12,8 @@ function meanMedianAndTotal(event, num1, num2, num3)
         /* Calculating the mean */
     let sum = Number(num1) + Number(num2) + Number(num3);
     let avg = sum / 3;
-    document.getElementById("mean").innerHTML = avg;
+    let decimal = avg.toFixed(4);
+    document.getElementById("mean").innerHTML = decimal;
 
         /* Calculating the median */
     let mathArr = [num1, num2, num3];
@@ -39,7 +40,7 @@ function personalMessage(event, name1, date1)
     date1 = document.getElementById("date1").value;
 
     /* Formatting the Message */
-    document.getElementById("message2").innerHTML = 
+    document.getElementById("personal-message").innerHTML = 
     `Thank you so much ${word1} for visiting my portfolio/resume site on ${date1}! 
     I am always trying to add more to it and  keep updating it!`;
 }
@@ -92,6 +93,7 @@ function changeButtoncolor(event)
 function changeTextColor(event) 
 {
     event.preventDefault();
+
     document.getElementById("second-button").style.color = randomColor();
     document.getElementById("button2").style.color = randomColor();
     event.target.style.backgroundColor = randomColor();
@@ -100,21 +102,31 @@ function changeTextColor(event)
 function changeBackgroundColor(event) 
 {
     event.preventDefault();
+
     document.getElementById("third-button").style.color = randomColor();
     document.getElementById("button3").style.color = randomColor();
     document.getElementById("button-section").style.backgroundColor = randomColor();
+    document.getElementById("button-title").style.color = randomColor();
+    document.getElementById("button-title").style.backgroundColor = randomColor();
     event.target.style.backgroundColor = randomColor();
 }
 
 function resetColors(event) 
 {
     event.preventDefault();
-    event.target.stlye.backgroundColor = "";
-    document.getElementById("second-button").style.color = "";
-    document.getElementById("button2").style.color = "";
-    document.getElementById("third-button").style.color = "";
-    document.getElementById("button3").style.color = "";
-    document.getElementById("button-section").style.backgroundColor = "";
+
+    document.getElementById("first-button").style.color = "white";
+    document.getElementById("button1").style.color = "darkblue";
+    document.getElementById("button1").style.backgroundColor = "white";
+    document.getElementById("second-button").style.color = "white";
+    document.getElementById("button2").style.color = "darkblue";
+    document.getElementById("button2").style.backgroundColor = "white";
+    document.getElementById("third-button").style.color = "white";
+    document.getElementById("button3").style.color = "darkblue";
+    document.getElementById("button3").style.backgroundColor = "white";
+    document.getElementById("button-title").style.color = "white";
+    document.getElementById("button-title").style.backgroundColor = "slategray";
+    document.getElementById("button-section").style.backgroundColor = "slategray";
 }
 
 firstButton.addEventListener("click", changeButtoncolor);

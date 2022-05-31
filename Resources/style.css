@@ -7,9 +7,14 @@
 
 body {
     background-color: slategray;
+    overflow: auto;
 }
 
 /* Top Navigation Bar */
+.nav-bar {
+    width: 100%;
+}
+
 .nav-bar nav{
     display:flex;
     width: 100%;
@@ -179,12 +184,17 @@ body {
     border-radius: 15px;
 }
 
+.math-answers {
+    display: inline;
+    width: 50%;
+}
+
 .math-answers label {
     width: 50%;
     text-decoration: none;
 }
 
-/* Word Form Title */
+/* Personal Message Title */
 .word-title {
     text-align: center;
     padding-top: 1rem;
@@ -192,7 +202,7 @@ body {
     text-decoration: underline;
 }
 
-/* Word Form Section */
+/* Personal Message Section */
 .form2 {
     display: flex;
     width: 100%;
@@ -226,14 +236,18 @@ body {
     border-radius: 15px;
 }
 
+.word-message {
+    width: 40%;
+}
+
 .word-message label {
-    width: 50%;
+    width: 40%;
     text-decoration: none;
 }
 
-.word-message span {
+.word-message p {
     display: flex;
-    width: 40%;
+    width: 50%;
 }
 
 /* Random Generator Title */
@@ -278,12 +292,16 @@ body {
     border-radius: 15px;
 }
 
+.random-message {
+    width: 40%;
+}
+
 .random-message label{
-    width: 50%;
+    width: 30%;
     text-decoration: none;
 }
 
-.random-message span {
+.random-message p {
     display: flex;
     width: 40%;
 }
@@ -315,7 +333,7 @@ body {
 /* First Button */
 .button1 {
     display: block;
-    margin: 1.5rem;
+    margin: 1.25rem;
 }
 
 .button1 label {
@@ -332,7 +350,7 @@ body {
 /* Second Button */
 .button2 {
     display: block;
-    margin: 1.5rem;
+    margin: 1.25rem;
 }
 
 .button2 label {
@@ -349,7 +367,7 @@ body {
 /* Third Button */
 .button3 {
     display: block;
-    margin: 1.5rem;
+    margin: 1.25rem;
 }
 
 .button3 label {
@@ -366,12 +384,14 @@ body {
 /* Reset Button */
 .reset-button {
     display: flex;
+    align-items: center;
 }
 
 .reset-button button {
     display: block;
-    height: 4rem;
+    height: 5rem;
     width: 8rem;
+    margin-top: 1.75rem;
     font-size: 1.5rem;
     color: darkblue;
     border-radius: 50px;
@@ -395,11 +415,126 @@ body {
 .footer li {
     display: flex;
     height: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0.75rem;
     padding: 0.75rem;
     align-items: center;
     border: 3px darkblue solid;
     border-radius: 1rem;
     background-color: darkblue;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1191px) {
+        /* Navigation Section */
+    .nav-bar li {
+        font-size: 1.1rem;
+    }
+    
+        /* Banner Section */
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+        /* Container Section */
+    .con-title {
+        font-size: 1.75rem;
+    }
+
+    .container-1 {
+        display: inline;
+    }
+
+    .left-side {
+        margin-bottom: 1rem;
+    }
+
+    .container-2 {
+        display: inline;
+    }
+
+    .left-side2 {
+        margin-bottom: 1rem;
+    }
+
+        /* Math Form Section */
+    .math-title {
+        font-size: 1.75rem;
+    }
+
+    .math-form label {
+        font-size: 1.25rem;
+    }
+
+    .math-form input {
+        font-size: 0.75rem;
+    }
+
+    .math-form button {
+        font-size: 1.10rem;
+    }
+
+    .math-answers label {
+        font-size: 1.25rem;
+    }
+
+        /* Personal Message Section */
+    .word-title {
+        font-size: 1.75rem;
+    }
+    
+    .word-form label {
+        font-size: 1.25rem;
+    }
+    
+    .word-form input {
+        font-size: 0.75rem;
+    }
+    
+    .word-form button {
+        font-size: 1.10rem;
+    }
+    
+    .word-message label {
+         font-size: 1.25rem;
+    }
+
+        /* Random Message Section */
+    .random-title {
+        font-size: 1.75rem;
+    }
+
+    .random-form label {
+        font-size: 1.25rem;
+    }
+
+    .random-form input {
+        font-size: 0.75rem;
+    }
+
+    .random-form button {
+        font-size: 1.10rem;
+    }
+
+    .random-message label {
+        font-size: 1.25rem;
+    }
+
+        /* Button Section */
+    .button-title {
+        font-size: 1.75rem;
+    }
+
+    .button-form label {
+        font-size: 1.25rem;
+    }
+
+    .button-form button {
+        font-size: 1.25rem;
+    }
+
+        /* Footer Section */
+    .footer li {
+        font-size: 1rem;
+    }
 }
