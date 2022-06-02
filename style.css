@@ -1,0 +1,594 @@
+/* Overall Styling */
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+    color: white;
+}
+
+body {
+    background-color: slategray;
+    overflow: auto;
+}
+
+/* Top Navigation Bar */
+.nav-bar {
+    width: 100%;
+}
+
+.nav-bar nav{
+    display:flex;
+    width: 100%;
+    height: 100px;
+    padding: 0.20rem;
+    align-content: center;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+.nav-bar img {
+    height: auto;
+    width: auto;
+    border: 3px darkblue solid;
+    border-radius: 10px;
+}
+
+.nav-bar ul{
+    display: inline-flex;
+    align-items: center;
+    list-style-position: inside;
+
+}
+
+.nav-bar li {
+    display: flex;
+    height: 2rem;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    align-items: center;
+    font-size: 1.45rem;
+    border: 3px darkblue solid;
+    border-radius: 1rem;
+    background-color: darkblue;
+}
+
+/* Banner & Main Title */
+.main-title {
+    display: block;
+    width: auto;
+    padding: 0.25rem;
+    font-size: 3rem;
+    border: 2px white solid;
+    border-radius: 15px;
+}
+
+.banner {
+    display: flex;
+    width: auto;
+    height: 35rem;
+    align-items: center;
+    background-image: url(./banner-pic.webp);
+    background-repeat: round;
+    border-bottom: 5px white solid;
+}
+
+/* Title for tables */
+.con-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* First Table */
+.container-1 {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    align-items: center;
+}
+
+/* First Table - Left Side */
+.left-side{
+    width: 50%;
+    border: 1px white solid;
+}
+
+.left-side th {
+    font-size: 1.5rem;
+    border: 1px white solid;
+
+}
+
+/* First Table - Right Side */
+.right-side {
+    width: 50%;
+    border: 1px white solid;
+}
+
+.right-side th {
+    font-size: 1.5rem;
+    border: 1px white solid;
+}
+
+/* Second Table */
+.container-2 {
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    align-items: center;
+}
+
+/* Second Table - Left Side */
+.left-side2 {
+    width: 50%;
+    border: 1px white solid;
+}
+
+.left-side2 th {
+    font-size: 1.5rem;
+    border: 1px white solid;
+}
+
+/* Second Table - Right Side */
+.right-side2 {
+    width: 50%;
+    border: 1px white solid;
+}
+
+.right-side2 th {
+    font-size: 1.5rem;
+    border: 1px white solid;
+}
+
+/* Math Form Title */
+.math-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Math Form Section */
+.form1 {
+    display: flex;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.35rem;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px white solid;
+}
+
+.form1 input {
+    color: black;
+    padding: 0.45rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: 1px darkblue solid;
+}
+
+.form1 label {
+    font-size: 1.5rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+
+.form1 button {
+    font-size: 1.25rem;
+    color: darkblue;
+    margin: 1rem;
+    padding: 0.45rem;
+    border-radius: 15px;
+}
+
+.math-answers {
+    display: inline;
+    width: 50%;
+}
+
+.math-answers label {
+    width: 50%;
+    text-decoration: none;
+}
+
+/* Personal Message Title */
+.word-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Personal Message Section */
+.form2 {
+    display: flex;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.35rem;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px white solid;
+}
+
+.form2 input {
+    color: black;
+    padding: 0.45rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: 1px darkblue solid;
+}
+
+.form2 label {
+    font-size: 1.5rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+
+.form2 button {
+    font-size: 1.25rem;
+    color: darkblue;
+    margin: 1rem;
+    padding: 0.45rem;
+    border-radius: 15px;
+}
+
+.word-message {
+    width: 40%;
+}
+
+.word-message label {
+    width: 40%;
+    text-decoration: none;
+}
+
+.word-message p {
+    display: flex;
+    width: 50%;
+}
+
+/* Random Generator Title */
+.random-title{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Random Generator Section */
+.form3{
+    display: flex;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.35rem;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px white solid;
+}
+
+.form3 input {
+    color: black;
+    padding: 0.45rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: 1px darkblue solid;
+}
+
+.form3 label {
+    font-size: 1.5rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+
+.form3 button {
+    font-size: 1.25rem;
+    color: darkblue;
+    margin: 1rem;
+    padding: 0.45rem;
+    border-radius: 15px;
+}
+
+.random-message {
+    width: 40%;
+}
+
+.random-message label{
+    width: 30%;
+    text-decoration: none;
+}
+
+.random-message p {
+    display: flex;
+    width: 40%;
+}
+
+/* Button Title */
+.button-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Button Section */
+.buttons {
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    margin: 0.3rem;
+    padding: 0.35rem;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 3px white solid;
+}
+
+.buttons form {
+    display: flex;
+}
+
+/* First Button */
+.button1 {
+    display: block;
+    margin: 1.25rem;
+}
+
+.button1 label {
+    font-size: 1.75rem;
+}
+
+.button1 button {
+    font-size: 1.5rem;
+    color: darkblue;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+
+/* Second Button */
+.button2 {
+    display: block;
+    margin: 1.25rem;
+}
+
+.button2 label {
+    font-size: 1.75rem;
+}
+
+.button2 button {
+    font-size: 1.5rem;
+    color: darkblue;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+
+/* Third Button */
+.button3 {
+    display: block;
+    margin: 1.25rem;
+}
+
+.button3 label {
+    font-size: 1.75rem;
+}
+
+.button3 button {
+    font-size: 1.5rem;
+    color: darkblue;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+
+/* Reset Button */
+.reset-button {
+    display: flex;
+    align-items: center;
+}
+
+.reset-button button {
+    display: block;
+    height: 5rem;
+    width: 8rem;
+    margin-top: 1.75rem;
+    font-size: 1.5rem;
+    color: darkblue;
+    border-radius: 50px;
+}
+
+/* Ball Section Title */
+.ball-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+
+}
+
+.ball-title2 {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Ball Section */
+.ball-section {
+    display: inline;
+    width: 100%;
+    justify-content: center;
+}
+
+.ball {
+    background-image: url(./basketball.png);
+    background-repeat: round;
+    position: relative;
+    height: 95px;
+    width: 125px;
+    margin-top: 10rem;
+    transition-property: bottom;
+    transition-duration: 0.30s;
+}
+
+.floor {
+    display: flex;
+    height: 1rem;
+    width: 100%;
+    background-color: white;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px white solid;
+}
+
+.footer ul {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.footer li {
+    display: flex;
+    height: 2rem;
+    font-size: 1.3rem;
+    margin: 1rem;
+    padding: 0.75rem;
+    align-items: center;
+    border: 3px darkblue solid;
+    border-radius: 1rem;
+    background-color: darkblue;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1191px) {
+        /* Navigation Section */
+    .nav-bar li {
+        font-size: 1.1rem;
+    }
+    
+        /* Banner Section */
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+        /* Container Section */
+    .con-title {
+        font-size: 1.75rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .container-1 {
+        display: inline;
+    }
+
+    .left-side {
+        margin-bottom: 1rem;
+    }
+
+    .container-2 {
+        display: inline;
+    }
+
+    .left-side2 {
+        margin-bottom: 1rem;
+    }
+
+        /* Math Form Section */
+    .math-title {
+        font-size: 1.75rem;
+    }
+
+    .math-form label {
+        font-size: 1.25rem;
+    }
+
+    .math-form input {
+        font-size: 0.75rem;
+    }
+
+    .math-form button {
+        font-size: 1.10rem;
+    }
+
+    .math-answers label {
+        font-size: 1.25rem;
+    }
+
+        /* Personal Message Section */
+    .word-title {
+        font-size: 1.75rem;
+    }
+    
+    .word-form label {
+        font-size: 1.25rem;
+    }
+    
+    .word-form input {
+        font-size: 0.75rem;
+    }
+    
+    .word-form button {
+        font-size: 1.10rem;
+    }
+    
+    .word-message label {
+         font-size: 1.25rem;
+    }
+
+        /* Random Message Section */
+    .random-title {
+        font-size: 1.75rem;
+    }
+
+    .random-form label {
+        font-size: 1.25rem;
+    }
+
+    .random-form input {
+        font-size: 0.75rem;
+    }
+
+    .random-form button {
+        font-size: 1.10rem;
+    }
+
+    .random-message label {
+        font-size: 1.25rem;
+    }
+
+        /* Button Section */
+    .button-title {
+        font-size: 1.75rem;
+    }
+
+    .button-form label {
+        font-size: 1.25rem;
+    }
+
+    .button-form button {
+        font-size: 1.25rem;
+    }
+
+        /* Ball Section */
+    .ball-title {
+        font-size: 1.75rem;
+    }
+
+    .ball-title2 {
+        font-size: 1.25rem;
+    }
+
+        /* Footer Section */
+    .footer li {
+        font-size: 1rem;
+    }
+}
