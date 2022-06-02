@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Alen's Resume Site</title>
+         <link href="./Resources/style.css" rel="stylesheet" type="text/css">
+         
+     </head>
+
+  <body>
+        <!-- Navigation Section -->
+    <div class="nav-bar" id="home">
+       <nav>
+         <img src="./Resources/coding.gif">
+          <ul>
+              <li id="home"><a href="#home">Home</a></li>
+              <li id="about"><a href="#about">About</a></li>
+              <li id="exp"><a href="#learn">Experience</a></li>
+              <li id="info"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+
+        <!-- Banner Section -->
+    <div class="banner">
+        <div class="main-title"><h1>Alen's Portfolio Site</h1></div>
+    </div>
+
+        <!-- About Section -->
+    <h2 class="con-title" id="about">About Me</h2>
+    <div class="container-1">
+        <table class="left-side">
+            <thead>
+                <tr>
+                    <th>Name:</th>
+                    <th>Alen Sadikoski</th>
+                </tr>
+                <tr>
+                    <th>Degree:</th>
+                    <th>Bachelor's of Science</th>
+                </tr>
+                <tr>
+                    <th>University:</th>
+                    <th>William Paterson University of NJ</th>
+                </tr>
+                <tr>
+                    <th>Major:</th>
+                    <th>Computer Information Technology</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="right-side">
+            <thead>
+             <tr>
+                 <th>Personality:</th>
+                 <th>Friendly & Outgoing</th>
+             </tr>
+             <tr>
+                 <th>Enjoys:</th>
+                 <th>The Outdoors; Hiking & Fishing</th>
+             </tr>
+             <tr>
+                 <th>Favorites:</th>
+                 <th>Walking my golden lab</th>
+             </tr>
+             <tr>
+                 <th>Pleasures:</th>
+                 <th>Sunrises & Sunsets</th>
+             </tr>
+            </thead>
+        </table>
+    </div>
+
+        <!-- Experience Section -->
+    <h2 class="con-title" id="learn">Experience & Skills</h2>
+    <div class="container-2">
+        <table class="left-side2">
+            <thead>
+                <tr>
+                    <th>HTML:</th>
+                    <th>Structual Code & Layout</th>
+                </tr>
+                <tr>
+                    <th>CSS:</th>
+                    <th>Adding color & styles</th>
+                </tr>
+                <tr>
+                    <th>JavaScript:</th>
+                    <th>Implementing JS for functionality</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="right-side2">
+            <thead>
+                <tr>
+                    <th>Git/GitHub:</th>
+                    <th>Version control</th>
+                </tr>
+                <tr>
+                    <th>Minor Java & Python:</th>
+                    <th>Application Development</th>
+                </tr>
+                <tr>
+                    <th>SQL/MSQL:</th>
+                    <th>Data Manipulation</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+        <!-- Math Form Section -->
+    <h2 class="math-title">Basic Math Output</h2>
+    <div class="form1">    
+        <form  method="GET" id="math-form" class="math-form">
+            <label for="num1">Please enter your 1st number:</label>
+            <input type="number" id="num1" name="num1" required min="1">
+                <br>
+            <label for="num2">Please enter your 2nd number:</label>
+            <input type="number" id="num2" name="num2" required min="1">
+                <br>
+            <label for="num3">Please enter your 3rd number:</label>
+            <input type="number" id="num3" name="num3" required min="1">
+                <br>
+            <label for="submit1" class="submit-button">Click for the mean, median, and total</label>
+            <button type="submit" id="submit1" name="submit1">Submit</button>
+                <br>
+        </form>
+        <div class="math-answers">
+            <label for="answer1">The mean is: <span id="mean"> </span></label>
+                <br>
+            <label for="answer2">The median is: <span id="median"> </span></label>
+                <br>
+            <label for="answer3">The total is: <span id="total"> </span></label>
+                <br>
+        </div>
+    </div>
+
+        <!-- Personal Message Section -->
+    <h2 class="word-title">Personal Message</h2>
+    <div class="form2">
+        <form id="word-form" class="word-form">
+            <label for="word1">Please enter your  name:</label>
+            <input type="text" id="name1" name="name1" placeholder="Name" required maxlength="30">
+                <br>
+            <label for="date1">Please enter today's date:</label>
+            <input type="date" id="date1" name="date1" required>
+                <br>
+            <label for="submit2" class="submit-button">Click for a personal message from me!</label>
+            <button type="submit" id="submit2" name="submit2">Submit</button>
+                <br>
+        </form>
+        <form class="word-message">
+            <label for="message1">Your personalized message:</label>
+            <p id="personal-message"></p>
+        </form>
+    </div>
+
+        <!-- Random Message Section -->
+    <h2 class="random-title">Random Message Generator</h2>
+    <div class="form3">
+        <form id="random-form" class="random-form">
+            <label for="first-option">Please pick your 1st word:</label>
+            <input list="option1" id="first-option" name="first-option">
+            <datalist id="option1">
+                <option value="huge"></option>
+                <option value="weird"></option>
+                <option value="strange"></option>
+            </datalist>
+                <br>
+            <label for="second-option">Please pick your 2nd word:</label>
+            <input list="option2" id="second-option" name="second-option">
+            <datalist id="option2">
+                <option value="awesome"></option>
+                <option value="spooky"></option>
+                <option value="cool"></option>
+            </datalist>
+                <br>
+            <label for="third-option">Please pick your 3rd word:</label>
+            <input list="option3" id="third-option" name="third-option">
+            <datalist id="option3">
+                <option value="odd"></option>
+                <option value="crazy"></option>
+                <option value="bizarre"></option>
+            </datalist>
+                <br>
+            <label for="submit3" class="submit-button">Click for a randomly generated message!</label>
+            <button type="submit" id="submit3" name="submit3">Submit</button>
+                <br>
+        </form>
+        <form class="random-message">
+            <label for="random1">Your random message is:</label>
+            <p id="random-result"></p>
+        </form>
+    </div>
+
+        <!-- Button Section -->
+    <h2 class="button-title" id="button-title">Please also try these buttons!</h2>
+    <div class="buttons" id="button-section">
+        <form id="button-form" class="button-form">
+            <div class="button1">
+                <label for="button1" id="first-button">Click me!</label>
+                <button type="button" id="button1" class="button1" name="button1">See what happens!</button>
+            </div>
+                <br>
+            <div class="button2">
+                <label for="button2" id="second-button">Click me!</label>
+                <button type="button" id="button2" class="button2" name="button2">Check this out!</button>
+            </div>
+                <br>
+            <div class="button3">
+                <label for="button3" id="third-button">Click me!</label>
+                <button type="button" id="button3" class="button3" name="button3">Wonder what this does?</button>
+            </div>
+                <br>
+            <div class="reset-button">
+                <label for="reset-button" id="reset-button"></label>
+                <button type="button" id="button4" class="button4" name="button4">Reset</button>
+            </div>
+                <br>
+        </form>
+    </div>
+
+        <!-- Bouncing Ball Section -->
+    <div class="ball-section" id="ball-section">
+    <h2 class="ball-title" id="ball-title">The Bouncing Ball</h2>
+    <h5 class="ball-title2" id="ball-title"> Click Here to Bounce the Ball!</h5>
+        <div class="ball" id="ball"></div>
+    </div>
+    <div class="floor"></div>
+
+        <!-- Footer Section -->
+    <div class="footer" id="contact">
+        <ul>
+            <li>Created and Coded by: Alen Sadikoski</li>
+            <li>Email: alensadikoski1@live.com</li>
+            <li><a href="https://www.linkedin.com/in/alen-s-a835a71a4/">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/alen-sad">GitHub Profile</a></li>
+        </ul>
+    </div>
+
+    <script src="./Resources/resume-site.js" type="text/Javascript"></script>
+  </body>
+ </html>
