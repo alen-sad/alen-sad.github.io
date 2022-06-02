@@ -1,4 +1,4 @@
-// Mean and Median Section //
+    // Mean and Median Section //
 const form1 = document.getElementById("submit1");
 
 function meanMedianAndTotal(event, num1, num2, num3) 
@@ -29,7 +29,7 @@ function meanMedianAndTotal(event, num1, num2, num3)
 form1.addEventListener("click", meanMedianAndTotal);
 
 
-// Personal Message Section //
+    // Personal Message Section //
 const form2 = document.getElementById("submit2");
 
 function personalMessage(event, name1, date1) 
@@ -47,10 +47,10 @@ function personalMessage(event, name1, date1)
 form2.addEventListener("click", personalMessage)
 
 
-// Random Message Generator //
+    // Random Message Generator //
 const form3 = document.getElementById("submit3");
 
-function randomMessage(event, option1, option2, option3) 
+function randomMessage(event, option1, option2, option3)
 {
     event.preventDefault();
 
@@ -68,7 +68,7 @@ function randomMessage(event, option1, option2, option3)
 }
 form3.addEventListener("click", randomMessage);
 
-// Button Section //
+    // Button Section //
 const firstButton = document.getElementById("button1");
 const secondButton = document.getElementById("button2");
 const thirdButton = document.getElementById("button3");
@@ -76,6 +76,7 @@ const reset = document.getElementById("button4");
 
 function randomColor() 
 {
+    /* Random RGB Color */
     let r = Math.floor(Math.random() * 256);
     let g = Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256);
@@ -128,8 +129,27 @@ function resetColors(event)
     document.getElementById("button-title").style.backgroundColor = "slategray";
     document.getElementById("button-section").style.backgroundColor = "slategray";
 }
-
 firstButton.addEventListener("click", changeButtoncolor);
 secondButton.addEventListener("click", changeTextColor);
 thirdButton.addEventListener("click", changeBackgroundColor);
 reset.addEventListener("click", resetColors);
+
+    // Ball Section //
+const ballSection = document.getElementById("ball-section");
+const ball = document.getElementById("ball");
+
+function ballUp(event) {
+
+    event.preventDefault();
+
+    ball.style.bottom = "9rem";
+}
+
+function ballDown(event) {
+
+    event.preventDefault();
+
+    ball.style.bottom = "0rem";
+}
+ballSection.addEventListener("mousedown", ballUp);
+ballSection.addEventListener("mouseup", ballDown);
