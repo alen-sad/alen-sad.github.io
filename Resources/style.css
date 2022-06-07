@@ -37,6 +37,7 @@ body {
     display: inline-flex;
     align-items: center;
     list-style-position: inside;
+
 }
 
 .nav-bar li {
@@ -49,10 +50,8 @@ body {
     border: 3px darkblue solid;
     border-radius: 1rem;
     background-color: darkblue;
-    
+    box-shadow: 3px 3px 3px white;
 }
-
-
 
 /* Banner & Main Title */
 .main-title {
@@ -62,7 +61,8 @@ body {
     font-size: 3rem;
     border: 2px white solid;
     border-radius: 15px;
-    text-shadow: 4px 4px 4px slategray;
+    text-shadow: 10px 10px 10px slategray;
+    box-shadow: 14px 14px 14px black;
 }
 
 .banner {
@@ -83,6 +83,12 @@ body {
     padding-top: 1rem;
     font-size: 2rem;
     text-decoration: underline;
+}
+
+.skill-title em {
+    color: darkblue;
+    text-decoration: underline;
+    text-shadow: 0px 0px 8px white;
 }
 
 /* First Table */
@@ -171,6 +177,7 @@ body {
     margin: 0.5rem;
     font-size: 1rem;
     border: 1px darkblue solid;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 .form1 label {
@@ -186,6 +193,7 @@ body {
     margin: 1rem;
     padding: 0.45rem;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 .math-answers {
@@ -223,6 +231,7 @@ body {
     margin: 0.5rem;
     font-size: 1rem;
     border: 1px darkblue solid;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 .form2 label {
@@ -238,6 +247,7 @@ body {
     margin: 1rem;
     padding: 0.45rem;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 .word-message {
@@ -279,6 +289,7 @@ body {
     margin: 0.5rem;
     font-size: 1rem;
     border: 1px darkblue solid;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 .form3 label {
@@ -294,6 +305,7 @@ body {
     margin: 1rem;
     padding: 0.45rem;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 .random-message {
@@ -322,7 +334,7 @@ body {
 .buttons {
     display: flex;
     height: 15rem;
-    width: auto;
+    width: 100%;
     margin: 0.3rem;
     padding: 0.35rem;
     align-items: center;
@@ -333,7 +345,6 @@ body {
 
 .buttons form {
     display: flex;
-    width: auto;
 }
 
 /* First Button */
@@ -351,6 +362,7 @@ body {
     color: darkblue;
     padding: 1.5rem;
     border-radius: 50px;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 /* Second Button */
@@ -368,6 +380,7 @@ body {
     color: darkblue;
     padding: 1.5rem;
     border-radius: 50px;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 /* Third Button */
@@ -385,6 +398,7 @@ body {
     color: darkblue;
     padding: 1.5rem;
     border-radius: 50px;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 /* Reset Button */
@@ -401,6 +415,7 @@ body {
     font-size: 1.5rem;
     color: darkblue;
     border-radius: 50px;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 /* Ball Section Title */
@@ -470,6 +485,7 @@ body {
     border: 3px darkblue solid;
     border-radius: 1rem;
     background-color: darkblue;
+    box-shadow: 3px 3px 3px white;
 }
 
 /* Media Queries */
@@ -481,7 +497,7 @@ body {
     
         /* Banner Section */
     .main-title {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
         /* Container Section */
@@ -583,10 +599,8 @@ body {
         padding: 1rem;
     }
 
-    .reset-button button {
-        margin-top: 1.25rem;
-        padding: 0.5rem;
-        height: 3.75rem;
+    .reset-button button{
+        height: 4rem;
         width: 6rem;
     }
 
