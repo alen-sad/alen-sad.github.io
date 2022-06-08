@@ -116,15 +116,15 @@ function resetColors(event)
 {
     event.preventDefault();
 
-    document.getElementById("first-button").style.color = "white";
-    document.getElementById("button1").style.color = "darkblue";
-    document.getElementById("button1").style.backgroundColor = "white";
-    document.getElementById("second-button").style.color = "white";
-    document.getElementById("button2").style.color = "darkblue";
-    document.getElementById("button2").style.backgroundColor = "white";
-    document.getElementById("third-button").style.color = "white";
-    document.getElementById("button3").style.color = "darkblue";
-    document.getElementById("button3").style.backgroundColor = "white";
+    document.getElementById("first-button").style.color = "black";
+    document.getElementById("button1").style.color = "white";
+    document.getElementById("button1").style.backgroundColor = "black";
+    document.getElementById("second-button").style.color = "black";
+    document.getElementById("button2").style.color = "white";
+    document.getElementById("button2").style.backgroundColor = "black";
+    document.getElementById("third-button").style.color = "black";
+    document.getElementById("button3").style.color = "white";
+    document.getElementById("button3").style.backgroundColor = "black";
     document.getElementById("button-title").style.color = "white";
     document.getElementById("button-title").style.backgroundColor = "slategray";
     document.getElementById("button-section").style.backgroundColor = "slategray";
@@ -153,3 +153,5 @@ function ballDown(event) {
 }
 ballSection.addEventListener("mousedown", ballUp);
 ballSection.addEventListener("mouseup", ballDown);
+ballSection.addEventListener("touchstart", ballUp);
+ballSection.addEventListener("touchend", ballDown);

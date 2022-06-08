@@ -6,51 +6,55 @@
     color: white;
 }
 
+html {
+    width: 100%;
+}
+
 body {
+    border: 5px black solid;
     background-color: slategray;
     overflow: auto;
+    width: auto;
 }
 
 /* Top Navigation Bar */
 .nav-bar {
-    width: 100%;
+    width: auto;
+    border: 5px black solid;
 }
 
 .nav-bar nav{
     display:flex;
-    width: 100%;
-    height: 100px;
-    padding: 0.20rem;
+    width: auto;
+    height: 7rem;
+    padding: 0.75rem;
     align-content: center;
-    border-top: 5px white solid;
-    border-bottom: 5px white solid;
+    
 }
 
 .nav-bar img {
     height: auto;
     width: auto;
-    border: 3px darkblue solid;
+    border: 0.3rem darkblue solid;
     border-radius: 10px;
 }
 
 .nav-bar ul{
     display: inline-flex;
     align-items: center;
-    list-style-position: inside;
 
 }
 
 .nav-bar li {
     display: flex;
-    height: 2rem;
-    margin: 0.5rem;
+    margin: 1rem;
     padding: 0.75rem;
     align-items: center;
-    font-size: 1.45rem;
-    border: 3px darkblue solid;
+    font-size: 1.35rem;
+    border: 3px black solid;
     border-radius: 1rem;
-    background-color: darkblue;
-    box-shadow: 3px 3px 3px white;
+    background-color: black;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 /* Banner & Main Title */
@@ -59,123 +63,138 @@ body {
     width: auto;
     padding: 0.25rem;
     font-size: 3rem;
-    border: 2px white solid;
+    border: 5px black solid;
     border-radius: 15px;
     text-shadow: 10px 10px 10px slategray;
-    box-shadow: 14px 14px 14px black;
+    box-shadow: 20px 20px 20px black;
 }
 
 .banner {
     display: flex;
     width: auto;
-    height: 35rem;
+    height: 40rem;
     align-items: center;
     background-image: url(./banner-pic.webp);
     background-repeat: round;
-    border-bottom: 5px white solid;
+    border-top: 5px black solid;
+    border-bottom: 10px black solid;
 }
 
 /* Title for tables */
 .con-title {
     display: flex;
+    width: auto;
     text-align: center;
     justify-content: center;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
     text-decoration: underline;
+    text-shadow: 0px 0px 10px black;
 }
 
 .skill-title em {
     color: darkblue;
     text-decoration: underline;
-    text-shadow: 0px 0px 8px white;
+    text-shadow: 0px 0px 10px white;
 }
 
 /* First Table */
 .container-1 {
     display: flex;
-    width: 100%;
+    width: auto;
     height: auto;
     align-items: center;
 }
 
 /* First Table - Left Side */
 .left-side{
-    width: 50%;
-    border: 1px white solid;
+    width: 49.5%;
+    border: 0.2rem black solid;
+    box-shadow: 5px 5px 5px black;
 }
 
 .left-side th {
-    font-size: 1.5rem;
-    border: 1px white solid;
+    padding: 0.45rem;
+    font-size: 1.75rem;
+    border: 0.2rem black solid;
 
 }
 
 /* First Table - Right Side */
 .right-side {
-    width: 50%;
-    border: 1px white solid;
+    width: 49.5%;
+    border: 0.2rem black solid;
+    box-shadow: 5px 5px 5px black;
 }
 
 .right-side th {
-    font-size: 1.5rem;
-    border: 1px white solid;
+    padding: 0.45rem;
+    font-size: 1.75rem;
+    border: 0.2rem black solid;
 }
 
 /* Second Table */
 .container-2 {
     display: flex;
-    width: 100%;
+    width: auto;
     height: auto;
+    padding-bottom: 3rem;
     align-items: center;
+    border-bottom: 10px black solid;
 }
 
 /* Second Table - Left Side */
 .left-side2 {
-    width: 50%;
-    border: 1px white solid;
+    width: 49.5%;
+    border: 0.2rem black solid;
+    box-shadow: 5px 5px 5px black;
 }
 
 .left-side2 th {
-    font-size: 1.5rem;
-    border: 1px white solid;
+    padding: 0.45rem;
+    font-size: 1.75rem;
+    border: 0.2rem black solid;
 }
 
 /* Second Table - Right Side */
 .right-side2 {
-    width: 50%;
-    border: 1px white solid;
+    width: 49.5%;
+    border: 0.2rem black solid;
+    box-shadow: 5px 5px 5px black;
 }
 
 .right-side2 th {
-    font-size: 1.5rem;
-    border: 1px white solid;
+    padding: 0.45rem;
+    font-size: 1.75rem;
+    border: 0.2rem black solid;
 }
 
 /* Math Form Title */
 .math-title {
+    width: auto;
     text-align: center;
     padding-top: 1rem;
     font-size: 2rem;
     text-decoration: underline;
+    text-shadow: 0px 0px 10px black;
 }
 
 /* Math Form Section */
 .form1 {
     display: flex;
-    width: 100%;
-    margin: 0.5rem;
-    padding: 0.35rem;
+    width: auto;
+    padding: 1rem;
     align-items: center;
     text-align: center;
-    border-bottom: 3px white solid;
+    border-bottom: 10px black solid;
 }
 
 .form1 input {
-    color: black;
+    color: white;
+    background-color: black;
     padding: 0.45rem;
-    margin: 0.5rem;
+    margin: 0.65rem;
     font-size: 1rem;
     border: 1px darkblue solid;
     box-shadow: 5px 5px 5px darkblue;
@@ -183,184 +202,207 @@ body {
 
 .form1 label {
     font-size: 1.5rem;
-    margin: 0.25rem;
+    color: black;
     padding: 0.5rem;
     text-decoration: underline;
 }
 
 .form1 button {
     font-size: 1.25rem;
-    color: darkblue;
-    margin: 1rem;
+    color: white;
+    background-color: black;
+    margin: 0.65rem;
     padding: 0.45rem;
     border-radius: 15px;
     box-shadow: 5px 5px 5px darkblue;
 }
 
+.math-form {
+    width: 49.5%;
+}
+
 .math-answers {
     display: inline;
-    width: 50%;
+    width: 49.5%;
 }
 
 .math-answers label {
-    width: 50%;
     text-decoration: none;
 }
 
 /* Personal Message Title */
 .word-title {
+    width: auto;
     text-align: center;
     padding-top: 1rem;
     font-size: 2rem;
     text-decoration: underline;
+    text-shadow: 0px 0px 10px black;
 }
 
 /* Personal Message Section */
 .form2 {
     display: flex;
-    width: 100%;
-    margin: 0.5rem;
-    padding: 0.35rem;
+    width: auto;
+    padding: 1rem;
     align-items: center;
     text-align: center;
-    border-bottom: 3px white solid;
+    border-bottom: 10px black solid;
 }
 
 .form2 input {
-    color: black;
+    color: white;
+    background: black;
     padding: 0.45rem;
-    margin: 0.5rem;
+    margin: 0.65rem;
     font-size: 1rem;
     border: 1px darkblue solid;
     box-shadow: 5px 5px 5px darkblue;
 }
 
 .form2 label {
+    color: black;
     font-size: 1.5rem;
-    margin: 0.25rem;
     padding: 0.5rem;
     text-decoration: underline;
 }
 
 .form2 button {
     font-size: 1.25rem;
-    color: darkblue;
-    margin: 1rem;
+    color: white;
+    background-color: black;
+    margin: 0.65rem;
     padding: 0.45rem;
     border-radius: 15px;
     box-shadow: 5px 5px 5px darkblue;
 }
 
+.word-form {
+    width: 49.5%;
+}
+
 .word-message {
-    width: 40%;
+    width: 49.5%;
 }
 
 .word-message label {
-    width: 40%;
     text-decoration: none;
 }
 
 .word-message p {
     display: flex;
-    width: 50%;
+    font-size: 1.15rem;
+    width: 49.5%;
 }
 
 /* Random Generator Title */
 .random-title{
+    width: auto;
     text-align: center;
     padding-top: 1rem;
     font-size: 2rem;
     text-decoration: underline;
+    text-shadow: 0px 0px 10px black;
 }
 
 /* Random Generator Section */
 .form3{
     display: flex;
-    width: 100%;
-    margin: 0.5rem;
-    padding: 0.35rem;
+    width: auto;
+    padding: 1rem;
     align-items: center;
     text-align: center;
-    border-bottom: 3px white solid;
+    border-bottom: 10px black solid;
 }
 
 .form3 input {
-    color: black;
+    color: white;
+    background: black;
     padding: 0.45rem;
-    margin: 0.5rem;
+    margin: 0.65rem;
     font-size: 1rem;
     border: 1px darkblue solid;
     box-shadow: 5px 5px 5px darkblue;
 }
 
 .form3 label {
+    color: black;
     font-size: 1.5rem;
-    margin: 0.25rem;
     padding: 0.5rem;
     text-decoration: underline;
 }
 
 .form3 button {
     font-size: 1.25rem;
-    color: darkblue;
-    margin: 1rem;
+    color: white;
+    background: black;
+    margin: 0.65rem;
     padding: 0.45rem;
     border-radius: 15px;
     box-shadow: 5px 5px 5px darkblue;
 }
 
+.random-form {
+    width: 49.5%;
+}
+
 .random-message {
-    width: 40%;
+    width: 49.5%;
 }
 
 .random-message label{
-    width: 30%;
     text-decoration: none;
 }
 
 .random-message p {
     display: flex;
-    width: 40%;
+    font-size: 1.15rem;
+    width: 49.5%;
 }
 
 /* Button Title */
 .button-title {
+    width: auto;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem;
     font-size: 2rem;
     text-decoration: underline;
+    text-shadow: 0px 0px 10px black;
 }
 
 /* Button Section */
 .buttons {
     display: flex;
-    height: 15rem;
-    width: 100%;
-    margin: 0.3rem;
-    padding: 0.35rem;
-    align-items: center;
-    justify-content: space-around;
+    width: auto;
+    padding: 2rem;
     text-align: center;
-    border-bottom: 3px white solid;
+    border-bottom: 10px black solid;
 }
 
-.buttons form {
+.button-form {
     display: flex;
+    width: auto;
 }
 
 /* First Button */
 .button1 {
     display: block;
+    width: auto;
     margin: 1.25rem;
 }
 
 .button1 label {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: underline;
 }
 
 .button1 button {
-    font-size: 1.5rem;
-    color: darkblue;
+    font-size: 1.35rem;
+    color: white;
+    background-color: black;
+    margin: 0.65rem;
     padding: 1.5rem;
     border-radius: 50px;
     box-shadow: 5px 5px 5px darkblue;
@@ -369,16 +411,22 @@ body {
 /* Second Button */
 .button2 {
     display: block;
+    width: auto;
     margin: 1.25rem;
 }
 
 .button2 label {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: underline;
 }
 
 .button2 button {
-    font-size: 1.5rem;
-    color: darkblue;
+    font-size: 1.35rem;
+    color: white;
+    background-color: black;
+    margin: 0.65rem;
     padding: 1.5rem;
     border-radius: 50px;
     box-shadow: 5px 5px 5px darkblue;
@@ -387,58 +435,74 @@ body {
 /* Third Button */
 .button3 {
     display: block;
+    width: auto;
     margin: 1.25rem;
 }
 
 .button3 label {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.5rem;
+    text-decoration: underline;
 }
 
 .button3 button {
-    font-size: 1.5rem;
-    color: darkblue;
+    font-size: 1.35rem;
+    color: white;
+    background-color: black;
+    margin: 0.65rem;
     padding: 1.5rem;
     border-radius: 50px;
     box-shadow: 5px 5px 5px darkblue;
 }
 
 /* Reset Button */
-.reset-button {
-    display: flex;
-    align-items: center;
+.button4 {
+    display: block;
+    width: auto;
+    margin: 1.25rem;
 }
 
-.reset-button button {
-    display: block;
-    height: 5rem;
-    width: 8rem;
-    margin-top: 1.75rem;
+.button4 label {
     font-size: 1.5rem;
-    color: darkblue;
+    color: black;
+    text-decoration: underline;
+}
+
+.button4 button {
+    font-size: 1.35rem;
+    color: white;
+    background-color: black;
+    margin: 0.65rem;
+    padding: 1.5rem;
     border-radius: 50px;
     box-shadow: 5px 5px 5px darkblue;
 }
 
 /* Ball Section Title */
 .ball-title {
+    width: auto;
     text-align: center;
     padding-top: 1rem;
     font-size: 2rem;
     text-decoration: underline;
+    text-shadow: 0px 0px 10px black;
 
 }
 
 .ball-title2 {
+    width: auto;
+    color: black;
     text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
     font-size: 1.5rem;
 }
 
 /* Ball Section */
 .ball-section {
     display: inline;
-    width: 100%;
+    height: auto;
+    width: auto;
     justify-content: center;
 }
 
@@ -446,54 +510,52 @@ body {
     background-image: url(./basketball.png);
     background-repeat: round;
     position: relative;
-    height: 95px;
-    width: 125px;
+    height: 6rem;
+    width: 8rem;
     margin-top: 10rem;
     transition-property: bottom;
-    transition-duration: 0.30s;
+    transition-duration: 0.25s;
 }
 
 .floor {
     display: flex;
-    height: 1rem;
-    width: 100%;
-    background-color: white;
+    height: 0.5rem;
+    width: auto;
+    background-color: black;
 }
 
 /* Footer */
 .footer {
     display: flex;
-    width: 100%;
-    height: 8rem;
-    justify-content: space-around;
+    width: auto;
+    padding: 1.35rem;
+    justify-content: center;
     align-items: center;
-    border-top: 2px white solid;
+    border-top: 10px black solid;
 }
 
 .footer ul {
     display: inline-flex;
-    align-items: center;
-
 }
 
 .footer li {
     display: flex;
-    height: 2rem;
-    font-size: 1.3rem;
-    margin: 1rem;
-    padding: 0.75rem;
-    align-items: center;
-    border: 3px darkblue solid;
+    width: auto;
+    font-size: 1.35rem;
+    margin: 0.1rem;
+    padding: 0.95rem;
+    text-align: center;
+    border: 3px black solid;
     border-radius: 1rem;
-    background-color: darkblue;
-    box-shadow: 3px 3px 3px white;
+    background-color: black;
+    box-shadow: 5px 5px 5px darkblue;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 1191px) {
+@media only screen and (max-width: 1250px) {
         /* Navigation Section */
     .nav-bar li {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
     }
     
         /* Banner Section */
@@ -503,29 +565,68 @@ body {
 
         /* Container Section */
     .con-title {
-        font-size: 1.75rem;
-        margin-bottom: 0.25rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     .container-1 {
-        display: inline;
+        display: block;
+        width: auto;
+        height: auto;
     }
 
     .left-side {
         margin-bottom: 1rem;
+        width: 70%;
+    }
+
+    .left-side th {
+        font-size: 1.5rem;
+    }
+
+    .right-side {
+        width: 70%;
+    }
+
+    .right-side th {
+        font-size: 1.5rem;
     }
 
     .container-2 {
-        display: inline;
+        display: block;
+        width: auto;
+        height: auto;
     }
 
     .left-side2 {
         margin-bottom: 1rem;
+        width: 70%;
+    }
+
+    .left-side2 th {
+        font-size: 1.5rem;
+    }
+
+    .right-side2 {
+        width: 70%;
+    }
+
+    .right-side2 th {
+        font-size: 1.5rem;
     }
 
         /* Math Form Section */
     .math-title {
         font-size: 1.75rem;
+        padding: 1rem;
+    }
+
+    .math-form {
+        width: auto;
+    }
+
+    .math-answers {
+        width: 49.5%;
     }
 
     .math-form label {
@@ -549,6 +650,14 @@ body {
         font-size: 1.75rem;
     }
     
+    .word-form {
+        width: auto;
+    }
+
+    .word-message {
+        width: 49.5%;
+    }
+
     .word-form label {
         font-size: 1.25rem;
     }
@@ -565,9 +674,21 @@ body {
          font-size: 1.25rem;
     }
 
+    .word-message p {
+        font-size: 1.05rem;
+    }
+
         /* Random Message Section */
     .random-title {
         font-size: 1.75rem;
+    }
+
+    .random-form {
+        width: auto;
+    }
+
+    .random-message {
+        width: 49.5%;
     }
 
     .random-form label {
@@ -586,9 +707,17 @@ body {
         font-size: 1.25rem;
     }
 
+    .random-message p {
+        font-size: 1.05rem;
+    }
+
         /* Button Section */
     .button-title {
         font-size: 1.75rem;
+    }
+
+    .button-form {
+        width: auto;
     }
 
     .button-form label {
@@ -596,11 +725,11 @@ body {
     }
 
     .button-form button {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         padding: 1rem;
     }
 
-    .reset-button button{
+    .reset-button button {
         height: 4rem;
         width: 6rem;
     }
@@ -615,7 +744,266 @@ body {
     }
 
         /* Footer Section */
+    .footer {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .footer li {
+        font-size: 1.10rem;
+        margin: 0.15rem;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+        /* HTML and Body Section */
+    html {
+        width: auto;
+    }
+
+    body {
+        width: auto;
+    }
+    
+        /* Navigation Section */
+    .nav-bar {
+        width: auto;
+    }
+    
+    .nav-bar li {
+    width: auto;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    }
+
+    .nav-bar nav {
+        height: 5rem;
+        padding: 0.25rem;
+    }
+
+        /* Banner Section */
+    .main-title {
+        font-size: 1.75rem;
+    }
+
+    .banner {
+        width: auto;
+        height: 30rem;
+    }
+
+        /* Top Container Section */
+    .con-title {
+        font-size: 1.5rem;
+    }
+
+    .skill-title em {
+        font-size: 1.35rem;
+    }
+
+    .container-1 {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .left-side {
+        width: 55%;
+    }
+
+    .left-side th {
+        font-size: 1.35rem;
+    }
+
+    .right-side {
+        width: 55%;
+    }
+
+    .right-side th {
+        font-size: 1.35rem;
+    }
+
+        /* Bottom Container Section */
+    .container-2 {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .left-side2 {
+        width: 55%;
+    }
+
+    .left-side2 th {
+        font-size: 1.35rem;
+    }
+
+    .right-side2 {
+        width: 55%;
+    }
+
+    .right-side2 th {
+        font-size: 1.35rem;
+    }
+
+        /* Math Form Section */
+    .math-title {
+        font-size: 1.5rem;
+    }
+
+    .form1 {
+        display: inline;
+        height: auto;
+        width: auto;
+        margin: 30rem;
+        padding: 0px;
+    }
+
+    .form1 input {
+        font-size: 0.75rem;
+    }
+
+    .form1 label {
+        font-size: 1.10rem;
+    }
+
+    .form1 button {
         font-size: 1rem;
+    }
+
+    .math-form {
+        width: 55%;
+    }
+
+    .math-answers {
+        display: block;
+        height: auto;
+        width: 55%;
+    }
+
+        /* Personal Message Section */
+    .word-title {
+        font-size: 1.5rem;
+        border-top: 10px black solid;
+    }
+
+    .form2 {
+        display: inline;
+        height: auto;
+        width: auto;
+        margin: 30rem;
+        padding: 0rem;
+    }
+
+    .form2 input {
+        font-size: 0.75rem;
+    }
+    
+    .form2 label {
+        font-size: 1.10rem;
+    }
+
+    .form2 button {
+        font-size: 1rem;
+    }
+
+    .word-form {
+        width: 55%;
+    }
+
+    .word-message {
+        width: 55%;
+    }
+
+        /* Random Message Section */
+    .random-title {
+        font-size: 1.5rem;
+        border-top: 10px black solid;
+    }
+
+    .form3 {
+        display: inline;
+        height: auto;
+        width: auto;
+        margin: 30rem;
+        padding: 0rem;
+    }
+
+    .form3 input {
+        font-size: 0.75rem;
+    }
+
+    .form3 label {
+        font-size: 1.10rem;
+    }
+
+    .form3 button {
+        font-size: 1rem;
+    }
+
+    .random-form {
+        width: 55%;
+    }
+
+    .random-message {
+        width: 55%;
+    }
+
+        /* Button Section */
+    .button-title {
+        font-size: 1.5rem;
+        border-top: 10px black solid;
+    }
+
+    .buttons {
+        display: inline-flex;
+        width: auto;
+    }
+
+    .button-form {
+        display: inline-flex;
+        height: auto;
+        width: auto;
+        justify-content: center;
+    }
+
+    .button-form label {
+        font-size: 1.10rem;
+    }
+
+    .button-form button {
+        font-size: 1rem;
+        width: auto;
+    }
+
+        /* Ball Section */
+    .ball-title {
+        font-size: 1.5rem;
+    }
+
+    .ball-title2 {
+        font-size: 1.10rem;
+    }
+
+    .ball-section {
+        width: auto;
+    }
+
+        /* Footer Section */
+    .footer {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer li {
+        width: 55%;
+        font-size: 1rem;
+        margin: 0.5rem;
+        padding: 0.3rem;
     }
 }
