@@ -22,8 +22,11 @@
 
         <!-- Banner Section -->
     <div class="banner">
-        <div class="main-title"><h1>Alen's Portfolio Site</h1></div>
+        <div class="main-title">
+            <h1>Alen's Portfolio Site</h1>
+        </div>
     </div>
+    
 
         <!-- About Section -->
     <h2 class="con-title" id="about">My Background</h2>
@@ -130,7 +133,7 @@
         <!-- Math Form Section -->
     <h2 class="math-title">Basic Math Output</h2>
     <div class="form1">    
-        <form  method="GET" id="math-form" class="math-form">
+        <form id="math-form" class="math-form">
             <label for="num1">Please enter your 1st number:</label>
             <input type="number" id="num1" name="num1" required min="1">
                 <br>
@@ -178,29 +181,29 @@
     <h2 class="random-title">Random Message Generator</h2>
     <div class="form3">
         <form id="random-form" class="random-form">
-            <label for="first-option">Please pick your 1st word:</label>
-            <input list="option1" id="first-option" name="first-option">
-            <datalist id="option1">
-                <option value="huge"></option>
-                <option value="weird"></option>
-                <option value="strange"></option>
-            </datalist>
+            <label for="option">Please pick your 1st word:</label>
+            <select id="first-option" name="option">
+                <option value="huge">huge</option>
+                <option value="weird">weird</option>
+                <option value="strange">strange</option>
+                <option value="abnormal">abnormal</option>
+            </select>
                 <br>
-            <label for="second-option">Please pick your 2nd word:</label>
-            <input list="option2" id="second-option" name="second-option">
-            <datalist id="option2">
-                <option value="awesome"></option>
-                <option value="spooky"></option>
-                <option value="cool"></option>
-            </datalist>
+            <label for="option2">Please pick your 2nd word:</label>
+            <select id="second-option" name="option2">
+                <option value="awesome">awesome</option>
+                <option value="spooky">spooky</option>
+                <option value="cool">cool</option>
+                <option value="ominous">ominous</option>
+            </select>
                 <br>
-            <label for="third-option">Please pick your 3rd word:</label>
-            <input list="option3" id="third-option" name="third-option">
-            <datalist id="option3">
-                <option value="odd"></option>
-                <option value="crazy"></option>
-                <option value="bizarre"></option>
-            </datalist>
+            <label for="option3">Please pick your 3rd word:</label>
+            <select id="third-option" name="option3">
+                <option value="odd">odd</option>
+                <option value="crazy">crazy</option>
+                <option value="bizarre">bizarre</option>
+                <option value="nuts">nuts</option>
+            </select>
                 <br>
             <label for="submit3" class="submit-button">Click for a random message!</label>
             <button type="submit" id="submit3" name="submit3">Submit</button>
@@ -229,7 +232,7 @@
                 <button type="button" id="button3" class="button3" name="button3">Wonder what this does?</button>
             </div>
             <div class="button4">
-                <label for="button4" id="reset-button">Clear section!</label>
+                <label for="button4" id="reset-button">Clear form!</label>
                 <button type="button" id="button4" class="button4" name="button4">Reset Button</button>
             </div>
         </form>
@@ -247,9 +250,9 @@
     <div class="footer" id="contact">
         <ul>
             <li>Created/Coded by: Alen Sadikoski</li>
-            <li>Email: alensadikoski1@live.com</li>
-            <li><a href="https://www.linkedin.com/in/alen-s-a835a71a4/">LinkedIn Profile</a></li>
-            <li><a href="https://github.com/alen-sad">GitHub Profile</a></li>
+            <li><a href="mailto:alensadikoski1@live.com"><img src="./Resources/email-icon.png" class="em-icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/alen-s-a835a71a4/" target="_blank"><img src="./Resources/Linkedin-logo.png"></a></li>
+            <li><a href="https://github.com/alen-sad" target="_blank"><img src="./Resources/GitHub-logo.png"></a></li>
             <li>Made on 6/2/2022</li>
         </ul>
     </div>

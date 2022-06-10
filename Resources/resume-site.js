@@ -12,7 +12,7 @@ function meanMedianAndTotal(event, num1, num2, num3)
         /* Calculating the mean */
     let sum = Number(num1) + Number(num2) + Number(num3);
     let avg = sum / 3;
-    let decimal = avg.toFixed(4);
+    let decimal = avg.toFixed(6);
     document.getElementById("mean").innerHTML = decimal;
 
         /* Calculating the median */
@@ -61,9 +61,10 @@ function randomMessage(event, option1, option2, option3)
     /* Randomly Generate a Message */
     let randomArr = [`Holy crap! That is one ${option1} monster! It looks so ${option2}! I've never seen something so ${option3}.`,
                      `Oh god! What is that ${option1} looking thing over there?! It seems to be really ${option2}. Want to see how ${option3} it is?`,
-                     `No way! How did this ${option1} thing get here?! Do you think it's ${option2}? This is so ${option3}!`];
+                     `No way! How did this ${option1} thing get here?! Do you think it's ${option2}? This is so ${option3}!`,
+                     `I can't believe this! There is a ${option1} looking animal over there! Why is that ${option2} thing looking this way?! It's too ${option3}`];
     
-    let randomNum = Math.floor(Math.random() * 3);
+    let randomNum = Math.floor(Math.random() * 4);
     document.getElementById("random-result").innerHTML = randomArr[randomNum];
 }
 form3.addEventListener("click", randomMessage);

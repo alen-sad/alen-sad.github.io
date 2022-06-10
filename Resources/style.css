@@ -54,16 +54,17 @@ body {
     border: 3px black solid;
     border-radius: 1rem;
     background-color: black;
-    box-shadow: 5px 5px 5px darkblue;
+    box-shadow: 0px 5px 5px darkblue;
 }
 
 /* Banner & Main Title */
 .main-title {
-    display: block;
+    display: flex;
     width: auto;
-    padding: 0.25rem;
+    padding: 0.75rem;
     font-size: 3rem;
-    border: 5px black solid;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0.5rem black solid;
     border-radius: 15px;
     text-shadow: 10px 10px 10px slategray;
     box-shadow: 20px 20px 20px black;
@@ -111,7 +112,7 @@ body {
 .left-side{
     width: 49.5%;
     border: 0.2rem black solid;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 5px 5px black;
 }
 
 .left-side th {
@@ -125,7 +126,7 @@ body {
 .right-side {
     width: 49.5%;
     border: 0.2rem black solid;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 5px 5px black;
 }
 
 .right-side th {
@@ -148,7 +149,7 @@ body {
 .left-side2 {
     width: 49.5%;
     border: 0.2rem black solid;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 5px 5px black;
 }
 
 .left-side2 th {
@@ -161,7 +162,7 @@ body {
 .right-side2 {
     width: 49.5%;
     border: 0.2rem black solid;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 5px 5px black;
 }
 
 .right-side2 th {
@@ -195,7 +196,7 @@ body {
     background-color: black;
     padding: 0.45rem;
     margin: 0.65rem;
-    font-size: 1rem;
+    font-size: 1.35rem;
     border: 1px darkblue solid;
     box-shadow: 5px 5px 5px darkblue;
 }
@@ -208,7 +209,7 @@ body {
 }
 
 .form1 button {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: white;
     background-color: black;
     margin: 0.65rem;
@@ -227,6 +228,7 @@ body {
 }
 
 .math-answers label {
+    font-size: 2rem;
     text-decoration: none;
 }
 
@@ -255,7 +257,7 @@ body {
     background: black;
     padding: 0.45rem;
     margin: 0.65rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     border: 1px darkblue solid;
     box-shadow: 5px 5px 5px darkblue;
 }
@@ -268,7 +270,7 @@ body {
 }
 
 .form2 button {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: white;
     background-color: black;
     margin: 0.65rem;
@@ -286,12 +288,13 @@ body {
 }
 
 .word-message label {
+    font-size: 2rem;
     text-decoration: none;
 }
 
 .word-message p {
     display: flex;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     width: 49.5%;
 }
 
@@ -315,12 +318,12 @@ body {
     border-bottom: 10px black solid;
 }
 
-.form3 input {
+.form3 select {
     color: white;
     background: black;
     padding: 0.45rem;
     margin: 0.65rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     border: 1px darkblue solid;
     box-shadow: 5px 5px 5px darkblue;
 }
@@ -333,7 +336,7 @@ body {
 }
 
 .form3 button {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: white;
     background: black;
     margin: 0.65rem;
@@ -351,12 +354,13 @@ body {
 }
 
 .random-message label{
+    font-size: 2rem;
     text-decoration: none;
 }
 
 .random-message p {
     display: flex;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     width: 49.5%;
 }
 
@@ -531,6 +535,7 @@ body {
     padding: 1.35rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-top: 10px black solid;
 }
 
@@ -540,33 +545,57 @@ body {
 
 .footer li {
     display: flex;
+    height: auto;
     width: auto;
     font-size: 1.35rem;
-    margin: 0.1rem;
-    padding: 0.95rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     border: 3px black solid;
     border-radius: 1rem;
     background-color: black;
-    box-shadow: 5px 5px 5px darkblue;
+    box-shadow: 0px 5px 5px darkblue;
+}
+
+.footer a {
+    text-align: center;
+}
+
+.footer img {
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.em-icon {
+    background-color: white;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1475px) {
         /* Navigation Section */
     .nav-bar li {
-        font-size: 1.15rem;
+        font-size: 1.4rem;
     }
     
         /* Banner Section */
     .main-title {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
     }
 
         /* Container Section */
     .con-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem;
+    }
+
+    .skill-title em {
+        font-size: 1.8rem;
     }
 
     .container-1 {
@@ -581,7 +610,7 @@ body {
     }
 
     .left-side th {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .right-side {
@@ -589,7 +618,7 @@ body {
     }
 
     .right-side th {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .container-2 {
@@ -604,7 +633,7 @@ body {
     }
 
     .left-side2 th {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .right-side2 {
@@ -612,12 +641,12 @@ body {
     }
 
     .right-side2 th {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
         /* Math Form Section */
     .math-title {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
         padding: 1rem;
     }
 
@@ -630,24 +659,25 @@ body {
     }
 
     .math-form label {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .math-form input {
-        font-size: 0.75rem;
+        font-size: 1.45rem;
     }
 
     .math-form button {
-        font-size: 1.10rem;
+        font-size: 1.45rem;
     }
 
     .math-answers label {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
         /* Personal Message Section */
     .word-title {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
+        padding: 1rem;
     }
     
     .word-form {
@@ -659,28 +689,29 @@ body {
     }
 
     .word-form label {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     
     .word-form input {
-        font-size: 0.75rem;
+        font-size: 1.45rem;
     }
     
     .word-form button {
-        font-size: 1.10rem;
+        font-size: 1.45rem;
     }
     
     .word-message label {
-         font-size: 1.25rem;
+         font-size: 1.75rem;
     }
 
     .word-message p {
-        font-size: 1.05rem;
+        font-size: 1.45rem;
     }
 
         /* Random Message Section */
     .random-title {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
+        padding: 1rem;
     }
 
     .random-form {
@@ -692,28 +723,33 @@ body {
     }
 
     .random-form label {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .random-form input {
-        font-size: 0.75rem;
+        font-size: 1.45rem;
     }
 
     .random-form button {
-        font-size: 1.10rem;
+        font-size: 1.45rem;
     }
 
     .random-message label {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
     .random-message p {
-        font-size: 1.05rem;
+        font-size: 1.45rem;
     }
 
         /* Button Section */
     .button-title {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    .buttons {
+        width: auto;
     }
 
     .button-form {
@@ -721,11 +757,11 @@ body {
     }
 
     .button-form label {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .button-form button {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         padding: 1rem;
     }
 
@@ -736,32 +772,41 @@ body {
 
         /* Ball Section */
     .ball-title {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
     }
 
     .ball-title2 {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
         /* Footer Section */
     .footer {
         display: flex;
+        height: auto;
         width: auto;
         justify-content: center;
         align-items: center;
     }
     
     .footer li {
-        font-size: 1.10rem;
-        margin: 0.15rem;
+        font-size: 1.45rem;
+        margin: 0.25rem;
+        height: auto;
         width: auto;
+        text-align: center;
+    }
+
+    .footer a {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1315px) {
         /* HTML and Body Section */
     html {
-        width: auto;
+        width: 100%;
     }
 
     body {
@@ -771,43 +816,51 @@ body {
         /* Navigation Section */
     .nav-bar {
         width: auto;
+        margin: auto;
+        padding: auto;
     }
     
     .nav-bar li {
     width: auto;
-    font-size: 1rem;
+    font-size: 1.15rem;
     margin: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.65rem;
     }
 
     .nav-bar nav {
-        height: 5rem;
-        padding: 0.25rem;
+        height: 5.35rem;
+        padding: 0.35rem;
     }
 
         /* Banner Section */
     .main-title {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
+        margin: auto;
+        padding: auto;
     }
 
     .banner {
         width: auto;
-        height: 30rem;
+        height: 35rem;
+        margin: auto;
+        padding: auto;
     }
 
         /* Top Container Section */
     .con-title {
-        font-size: 1.5rem;
+        font-size: 1.85rem;
     }
 
     .skill-title em {
-        font-size: 1.35rem;
+        font-size: 1.65rem;
     }
 
     .container-1 {
         display: block;
         width: auto;
         height: auto;
+        margin: auto;
+        padding: auto;
     }
 
     .left-side {
@@ -815,7 +868,7 @@ body {
     }
 
     .left-side th {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
     }
 
     .right-side {
@@ -823,7 +876,7 @@ body {
     }
 
     .right-side th {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
     }
 
         /* Bottom Container Section */
@@ -831,6 +884,8 @@ body {
         display: block;
         width: auto;
         height: auto;
+        margin: auto;
+        padding: auto;
     }
 
     .left-side2 {
@@ -838,7 +893,7 @@ body {
     }
 
     .left-side2 th {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
     }
 
     .right-side2 {
@@ -846,32 +901,35 @@ body {
     }
 
     .right-side2 th {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
     }
 
         /* Math Form Section */
     .math-title {
-        font-size: 1.5rem;
+        font-size: 1.85rem;
+        padding: 1.5rem
     }
 
     .form1 {
         display: inline;
         height: auto;
         width: auto;
-        margin: 30rem;
-        padding: 0px;
+        margin: auto;
+        padding: 0rem;
     }
 
     .form1 input {
-        font-size: 0.75rem;
+        font-size: 1.35rem;
+        margin: 1rem;
+        padding: 0.5rem
     }
 
     .form1 label {
-        font-size: 1.10rem;
+        font-size: 1.35rem;
     }
 
     .form1 button {
-        font-size: 1rem;
+        font-size: 1.35rem;
     }
 
     .math-form {
@@ -882,11 +940,16 @@ body {
         display: block;
         height: auto;
         width: 55%;
+        padding: 2rem;
+    }
+
+    .math-answers label {
+        font-size: 1.35rem;
     }
 
         /* Personal Message Section */
     .word-title {
-        font-size: 1.5rem;
+        font-size: 1.85rem;
         border-top: 10px black solid;
     }
 
@@ -894,20 +957,22 @@ body {
         display: inline;
         height: auto;
         width: auto;
-        margin: 30rem;
+        margin: auto;
         padding: 0rem;
     }
 
     .form2 input {
-        font-size: 0.75rem;
+        font-size: 1.35rem;
+        margin: 1rem;
+        padding: 0.5rem;
     }
     
     .form2 label {
-        font-size: 1.10rem;
+        font-size: 1.35rem;
     }
 
     .form2 button {
-        font-size: 1rem;
+        font-size: 1.35rem;
     }
 
     .word-form {
@@ -916,11 +981,22 @@ body {
 
     .word-message {
         width: 55%;
+        padding: 1rem;
+    }
+
+    .word-message label {
+        font-size: 1.35rem;
+        text-decoration: underline;
+    }
+
+    .word-message p {
+        font-size: 1.35rem;
+        padding: 0.5rem;
     }
 
         /* Random Message Section */
     .random-title {
-        font-size: 1.5rem;
+        font-size: 1.85rem;
         border-top: 10px black solid;
     }
 
@@ -928,20 +1004,22 @@ body {
         display: inline;
         height: auto;
         width: auto;
-        margin: 30rem;
+        margin: auto;
         padding: 0rem;
     }
 
-    .form3 input {
-        font-size: 0.75rem;
+    .form3 select {
+        font-size: 1.35rem;
+        margin: 1rem;
+        padding: 0.5rem;
     }
 
     .form3 label {
-        font-size: 1.10rem;
+        font-size: 1.35rem;
     }
 
     .form3 button {
-        font-size: 1rem;
+        font-size: 1.35rem;
     }
 
     .random-form {
@@ -950,42 +1028,56 @@ body {
 
     .random-message {
         width: 55%;
+        padding: 1rem;
+    }
+
+    .random-message label {
+        font-size: 1.35rem;
+        text-decoration: underline;
+    }
+
+    .random-message p {
+        font-size: 1.35rem;
+        padding: 0.5rem;
     }
 
         /* Button Section */
     .button-title {
-        font-size: 1.5rem;
+        font-size: 1.85rem;
         border-top: 10px black solid;
     }
 
     .buttons {
-        display: inline-flex;
+        display: flex;
+        height: auto;
         width: auto;
+        margin: auto;
+        padding: auto;
     }
 
     .button-form {
-        display: inline-flex;
         height: auto;
         width: auto;
-        justify-content: center;
     }
 
     .button-form label {
-        font-size: 1.10rem;
+        width: auto;
+        font-size: 1.35rem;
     }
 
     .button-form button {
-        font-size: 1rem;
+        font-size: 1.35rem;
         width: auto;
+        padding: 1.25rem;
     }
 
         /* Ball Section */
     .ball-title {
-        font-size: 1.5rem;
+        font-size: 1.85rem;
     }
 
     .ball-title2 {
-        font-size: 1.10rem;
+        font-size: 1.5rem;
     }
 
     .ball-section {
@@ -1000,10 +1092,16 @@ body {
         align-items: center;
     }
 
+    .footer a {
+        text-align: center;
+    }
+
     .footer li {
-        width: 55%;
-        font-size: 1rem;
+        width: auto;
+        font-size: 1.35rem;
         margin: 0.5rem;
-        padding: 0.3rem;
+        padding: 0.35rem;
+        text-align: center;
+        align-items: center;
     }
 }
