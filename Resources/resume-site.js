@@ -105,8 +105,17 @@ function changeBackgroundColor(event)
 {
     event.preventDefault();
 
+    document.getElementById("first-button").style.color = randomColor();
+    document.getElementById("button1").style.color = randomColor();
+    document.getElementById("button1").style.backgroundColor = randomColor();
+    document.getElementById("second-button").style.color = randomColor();
+    document.getElementById("button2").style.color = randomColor();
+    document.getElementById("button2").style.backgroundColor = randomColor();
     document.getElementById("third-button").style.color = randomColor();
     document.getElementById("button3").style.color = randomColor();
+    document.getElementById("reset-button").style.color = randomColor();
+    document.getElementById("button4").style.color = randomColor();
+    document.getElementById("button4").style.backgroundColor = randomColor();
     document.getElementById("button-section").style.backgroundColor = randomColor();
     document.getElementById("button-title").style.color = randomColor();
     document.getElementById("button-title").style.backgroundColor = randomColor();
@@ -126,6 +135,9 @@ function resetColors(event)
     document.getElementById("third-button").style.color = "black";
     document.getElementById("button3").style.color = "white";
     document.getElementById("button3").style.backgroundColor = "black";
+    document.getElementById("reset-button").style.color = "black";
+    document.getElementById("button4").style.color = "white";
+    document.getElementById("button4").style.backgroundColor = "black";
     document.getElementById("button-title").style.color = "white";
     document.getElementById("button-title").style.backgroundColor = "slategray";
     document.getElementById("button-section").style.backgroundColor = "slategray";
